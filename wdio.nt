@@ -1,0 +1,1735 @@
+<https://w3id.org/wdio#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/wdio#> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/wdio/0.8> .
+<https://w3id.org/wdio#> <http://purl.org/dc/elements/1.1/title> "Wood destroying insects ontology (WDIO)"@en .
+<https://w3id.org/wdio#> <http://purl.org/dc/elements/1.1/title> "Ontologie holzzerstörender Insekten" .
+<https://w3id.org/wdio#> <http://purl.org/dc/terms/creator> "Christian Kreyenschmidt, Jade University of applied science, Odenburg / Germany"@en .
+<https://w3id.org/wdio#> <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/1.0"@en .
+<https://w3id.org/wdio#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "wdio" .
+<https://w3id.org/wdio#> <http://schema.org/dateCreated> "2021-07-28" .
+<https://w3id.org/wdio#> <http://www.w3.org/2000/01/rdf-schema#comment> "An essential part of maintenance in existing buildings is assessment and evaluation of structural condition by experts and specialists from different fields. Especially before renovation processes the assessment of an existing building is often significant for the further proceedings. Generating an assessment is characterized by heterogeneous influences and the detection, classification, evaluation and documentation of anomalies and damages include a high workload in the pre-project phase. On the one hand, costs and time for building assessment should be kept lean and on the other hand the findings must be reliable for the further planning of rehabilitation-/renovation processes. This paper is about the typical characteristics and classification of damaged timber structures in existing buildings. Therefore, this paper presents an approach of a domain ontology for the classification of wood pests. The implementation of a linked data ontology will assist the assessment engineer and transform his results to a more transparent structure. The long-term goal is to relieve and support the assessment engineer on the site and improve repetitive processes in assessment tasks."@en .
+<https://w3id.org/wdio#> <http://www.w3.org/2002/07/owl#versionInfo> "0.8"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://creativecommons.org/ns#Licence
+<http://creativecommons.org/ns#Licence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/rights
+<http://purl.org/dc/elements/1.1/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://schema.org/dateCreated
+<http://schema.org/dateCreated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://schema.org/license
+<http://schema.org/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/wdio#action_needed
+<https://w3id.org/wdio#action_needed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/wdio#action_needed> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
+<https://w3id.org/wdio#action_needed> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/wdio#cyclic_action> .
+<https://w3id.org/wdio#action_needed> <http://www.w3.org/2000/01/rdf-schema#comment> "In the case of an infestation there is a need for action."@en .
+<https://w3id.org/wdio#action_needed> <http://www.w3.org/2000/01/rdf-schema#label> "action needed"@en .
+# 
+# https://w3id.org/wdio#has_bodycolor
+<https://w3id.org/wdio#has_bodycolor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/wdio#has_bodycolor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
+<https://w3id.org/wdio#has_bodycolor> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/wdio#Colors> .
+<https://w3id.org/wdio#has_bodycolor> <http://www.w3.org/2000/01/rdf-schema#comment> "Describes the bodycolor."@en .
+<https://w3id.org/wdio#has_bodycolor> <http://www.w3.org/2000/01/rdf-schema#label> "has bodycolor"@en .
+# 
+# https://w3id.org/wdio#has_fecescolor
+<https://w3id.org/wdio#has_fecescolor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/wdio#has_fecescolor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
+<https://w3id.org/wdio#has_fecescolor> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/wdio#Colors> .
+<https://w3id.org/wdio#has_fecescolor> <http://www.w3.org/2000/01/rdf-schema#comment> "Describes the fecescolor."@en .
+<https://w3id.org/wdio#has_fecescolor> <http://www.w3.org/2000/01/rdf-schema#label> "has fecescolor"@en .
+# 
+# https://w3id.org/wdio#has_fecesform
+<https://w3id.org/wdio#has_fecesform> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/wdio#has_fecesform> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
+<https://w3id.org/wdio#has_fecesform> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/wdio#feces> .
+<https://w3id.org/wdio#has_fecesform> <http://www.w3.org/2000/01/rdf-schema#comment> "Describes the fecesform."@en .
+<https://w3id.org/wdio#has_fecesform> <http://www.w3.org/2000/01/rdf-schema#label> "has fecesform"@en .
+# 
+# https://w3id.org/wdio#has_flyholeform
+<https://w3id.org/wdio#has_flyholeform> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/wdio#has_flyholeform> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
+<https://w3id.org/wdio#has_flyholeform> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/wdio#Flyholeform> .
+<https://w3id.org/wdio#has_flyholeform> <http://www.w3.org/2000/01/rdf-schema#comment> "Describes the flyholeform."@en .
+<https://w3id.org/wdio#has_flyholeform> <http://www.w3.org/2000/01/rdf-schema#label> "has flyholeform"@en .
+# 
+# https://w3id.org/wdio#has_larvacolor
+<https://w3id.org/wdio#has_larvacolor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/wdio#has_larvacolor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
+<https://w3id.org/wdio#has_larvacolor> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/wdio#Colors> .
+<https://w3id.org/wdio#has_larvacolor> <http://www.w3.org/2000/01/rdf-schema#comment> "Describes the larvacolor."@en .
+<https://w3id.org/wdio#has_larvacolor> <http://www.w3.org/2000/01/rdf-schema#label> "has larvacolor"@en .
+# 
+# https://w3id.org/wdio#has_special_feature
+<https://w3id.org/wdio#has_special_feature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/wdio#has_special_feature> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
+<https://w3id.org/wdio#has_special_feature> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/wdio#Special_Features> .
+<https://w3id.org/wdio#has_special_feature> <http://www.w3.org/2000/01/rdf-schema#comment> "Describes a special feature of the insect."@en .
+<https://w3id.org/wdio#has_special_feature> <http://www.w3.org/2000/01/rdf-schema#label> "has special feature"@en .
+# 
+# https://w3id.org/wdio#has_wingcolor
+<https://w3id.org/wdio#has_wingcolor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/wdio#has_wingcolor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
+<https://w3id.org/wdio#has_wingcolor> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/wdio#Colors> .
+<https://w3id.org/wdio#has_wingcolor> <http://www.w3.org/2000/01/rdf-schema#comment> "Describes the wingcolor."@en .
+<https://w3id.org/wdio#has_wingcolor> <http://www.w3.org/2000/01/rdf-schema#label> "has wingcolor"@en .
+# 
+# https://w3id.org/wdio#is_affecting
+<https://w3id.org/wdio#is_affecting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/wdio#is_affecting> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
+<https://w3id.org/wdio#is_affecting> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/wdio#Wood> .
+<https://w3id.org/wdio#is_affecting> <http://www.w3.org/2000/01/rdf-schema#comment> "Describes the kind of wood that could get affected from the insect."@en .
+<https://w3id.org/wdio#is_affecting> <http://www.w3.org/2000/01/rdf-schema#label> "is affecting"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/wdio#Bodylength_insect
+<https://w3id.org/wdio#Bodylength_insect> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/wdio#Bodylength_insect> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://w3id.org/wdio#Bodylength_insect> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
+<https://w3id.org/wdio#Bodylength_insect> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<https://w3id.org/wdio#Bodylength_insect> <http://www.w3.org/2000/01/rdf-schema#comment> "Describes the bodylength of the insect."@en .
+<https://w3id.org/wdio#Bodylength_insect> <http://www.w3.org/2000/01/rdf-schema#label> "Bodylength"@en .
+# 
+# https://w3id.org/wdio#has_fly_hole_size
+<https://w3id.org/wdio#has_fly_hole_size> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/wdio#has_fly_hole_size> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://w3id.org/wdio#has_fly_hole_size> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/wdio#Insects> .
+<https://w3id.org/wdio#has_fly_hole_size> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<https://w3id.org/wdio#has_fly_hole_size> <http://www.w3.org/2000/01/rdf-schema#comment> "Describes the flyholesize of the insect. In case it is oval, the value discribes the length of the hole."@en .
+<https://w3id.org/wdio#has_fly_hole_size> <http://www.w3.org/2000/01/rdf-schema#label> "flyholesize"@en .
+# 
+# https://w3id.org/wdio#has_larvalength
+<https://w3id.org/wdio#has_larvalength> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/wdio#has_larvalength> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://w3id.org/wdio#has_larvalength> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
+<https://w3id.org/wdio#has_larvalength> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<https://w3id.org/wdio#has_larvalength> <http://www.w3.org/2000/01/rdf-schema#comment> "Describes the bodylength of the larva."@en .
+<https://w3id.org/wdio#has_larvalength> <http://www.w3.org/2000/01/rdf-schema#label> "Larvalength"@en .
+# 
+# https://w3id.org/wdio#need_wood_humidity
+<https://w3id.org/wdio#need_wood_humidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/wdio#need_wood_humidity> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://w3id.org/wdio#need_wood_humidity> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
+<https://w3id.org/wdio#need_wood_humidity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<https://w3id.org/wdio#need_wood_humidity> <http://www.w3.org/2000/01/rdf-schema#comment> "Describes the minimum wood humidity that is needed for the insect activity."@en .
+<https://w3id.org/wdio#need_wood_humidity> <http://www.w3.org/2000/01/rdf-schema#label> "need wood humidity"@en .
+# 
+# https://w3id.org/wdio#stay_for_generations
+<https://w3id.org/wdio#stay_for_generations> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/wdio#stay_for_generations> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://w3id.org/wdio#stay_for_generations> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
+<https://w3id.org/wdio#stay_for_generations> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<https://w3id.org/wdio#stay_for_generations> <http://www.w3.org/2000/01/rdf-schema#comment> "Describes the generation tim the insects stay in the wood. This value is only important for cyclic insects."@en .
+<https://w3id.org/wdio#stay_for_generations> <http://www.w3.org/2000/01/rdf-schema#label> "Stay for generations"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/wdio#Alder_Heartwood
+<https://w3id.org/wdio#Alder_Heartwood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#Alder_Heartwood> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#Hardwood_Heartwood> .
+<https://w3id.org/wdio#Alder_Heartwood> <http://www.w3.org/2000/01/rdf-schema#comment> "Erle_Kernholz (deutsch)" .
+<https://w3id.org/wdio#Alder_Heartwood> <http://www.w3.org/2000/01/rdf-schema#label> "Alder_Heartwood"@en .
+<https://w3id.org/wdio#Alder_Heartwood> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.wikidata.org/wiki/Q1355553" .
+# 
+# https://w3id.org/wdio#Alder_Sapwood
+<https://w3id.org/wdio#Alder_Sapwood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#Alder_Sapwood> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#Hardwood_Sapwood> .
+<https://w3id.org/wdio#Alder_Sapwood> <http://www.w3.org/2000/01/rdf-schema#comment> "Erle_Splintholz (deutsch)" .
+<https://w3id.org/wdio#Alder_Sapwood> <http://www.w3.org/2000/01/rdf-schema#label> "Alder_Sapwood"@en .
+<https://w3id.org/wdio#Alder_Sapwood> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.wikidata.org/wiki/Q1355553" .
+# 
+# https://w3id.org/wdio#Ash_Heartwood
+<https://w3id.org/wdio#Ash_Heartwood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#Ash_Heartwood> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#Hardwood_Heartwood> .
+<https://w3id.org/wdio#Ash_Heartwood> <http://www.w3.org/2000/01/rdf-schema#comment> "Esche_Kernholz (deutsch)" .
+<https://w3id.org/wdio#Ash_Heartwood> <http://www.w3.org/2000/01/rdf-schema#label> "Ash_Heartwood"@en .
+<https://w3id.org/wdio#Ash_Heartwood> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.wikidata.org/wiki/Q1367022" .
+# 
+# https://w3id.org/wdio#Ash_Sapwood
+<https://w3id.org/wdio#Ash_Sapwood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#Ash_Sapwood> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#Hardwood_Sapwood> .
+<https://w3id.org/wdio#Ash_Sapwood> <http://www.w3.org/2000/01/rdf-schema#comment> "Esche_Splintholz (deutsch)" .
+<https://w3id.org/wdio#Ash_Sapwood> <http://www.w3.org/2000/01/rdf-schema#label> "Ash_Sapwood"@en .
+<https://w3id.org/wdio#Ash_Sapwood> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.wikidata.org/wiki/Q1367022" .
+# 
+# https://w3id.org/wdio#Beech_Heartwood
+<https://w3id.org/wdio#Beech_Heartwood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#Beech_Heartwood> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#Hardwood_Heartwood> .
+<https://w3id.org/wdio#Beech_Heartwood> <http://www.w3.org/2000/01/rdf-schema#comment> "Buche_Kernholz (deutsch)" .
+<https://w3id.org/wdio#Beech_Heartwood> <http://www.w3.org/2000/01/rdf-schema#label> "Beech_Heartwood"@en .
+<https://w3id.org/wdio#Beech_Heartwood> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.wikidata.org/wiki/Q998316" .
+# 
+# https://w3id.org/wdio#Beech_Sapwood
+<https://w3id.org/wdio#Beech_Sapwood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#Beech_Sapwood> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#Hardwood_Sapwood> .
+<https://w3id.org/wdio#Beech_Sapwood> <http://www.w3.org/2000/01/rdf-schema#comment> "Buche_Kernholz (deutsch)" .
+<https://w3id.org/wdio#Beech_Sapwood> <http://www.w3.org/2000/01/rdf-schema#label> "Beech_Sapwood"@en .
+<https://w3id.org/wdio#Beech_Sapwood> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.wikidata.org/wiki/Q998316" .
+# 
+# https://w3id.org/wdio#Chemicals
+<https://w3id.org/wdio#Chemicals> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#Chemicals> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#Treatment> .
+<https://w3id.org/wdio#Chemicals> <http://www.w3.org/2000/01/rdf-schema#comment> "Wood preservative with preventive effectiveness against individual beetle species or against all wood-destroying insects."@en .
+<https://w3id.org/wdio#Chemicals> <http://www.w3.org/2000/01/rdf-schema#label> "Chemical"@en .
+# 
+# https://w3id.org/wdio#Chestnut_Heartwood
+<https://w3id.org/wdio#Chestnut_Heartwood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#Chestnut_Heartwood> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#Hardwood_Heartwood> .
+<https://w3id.org/wdio#Chestnut_Heartwood> <http://www.w3.org/2000/01/rdf-schema#comment> "Kastanie_Kernholz (deutsch)" .
+<https://w3id.org/wdio#Chestnut_Heartwood> <http://www.w3.org/2000/01/rdf-schema#label> "Chestnut_Heartwood"@en .
+<https://w3id.org/wdio#Chestnut_Heartwood> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.wikidata.org/wiki/Q28870512" .
+# 
+# https://w3id.org/wdio#Chestnut_Sapwood
+<https://w3id.org/wdio#Chestnut_Sapwood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#Chestnut_Sapwood> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#Hardwood_Sapwood> .
+<https://w3id.org/wdio#Chestnut_Sapwood> <http://www.w3.org/2000/01/rdf-schema#comment> "Kastanie_Splintholz (deutsch)" .
+<https://w3id.org/wdio#Chestnut_Sapwood> <http://www.w3.org/2000/01/rdf-schema#label> "Chestnut_Sapwood"@en .
+<https://w3id.org/wdio#Chestnut_Sapwood> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.wikidata.org/wiki/Q28870512" .
+# 
+# https://w3id.org/wdio#Colors
+<https://w3id.org/wdio#Colors> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#Colors> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#Damage_characteristics> .
+<https://w3id.org/wdio#Colors> <http://www.w3.org/2000/01/rdf-schema#comment> "Discribes the spectrum of the insect related colors."@en .
+<https://w3id.org/wdio#Colors> <http://www.w3.org/2000/01/rdf-schema#label> "Colors"@en .
+# 
+# https://w3id.org/wdio#Cylinder_form
+<https://w3id.org/wdio#Cylinder_form> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#Cylinder_form> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#feces> .
+<https://w3id.org/wdio#Cylinder_form> <http://www.w3.org/2000/01/rdf-schema#comment> "Fecal particles are cylindrical and cut straight at the ends."@en .
+<https://w3id.org/wdio#Cylinder_form> <http://www.w3.org/2000/01/rdf-schema#label> "cylindrical shaped"@en .
+# 
+# https://w3id.org/wdio#Damage_characteristics
+<https://w3id.org/wdio#Damage_characteristics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#Damage_characteristics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<https://w3id.org/wdio#Damage_characteristics> <http://www.w3.org/2000/01/rdf-schema#comment> "Characteristics and attributes of the damage location and the insects features."@en .
+<https://w3id.org/wdio#Damage_characteristics> <http://www.w3.org/2000/01/rdf-schema#label> "Damage characteristics"@en .
+# 
+# https://w3id.org/wdio#Douglas_fir_Heartwood
+<https://w3id.org/wdio#Douglas_fir_Heartwood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#Douglas_fir_Heartwood> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#Softwood_Heartwood> .
+<https://w3id.org/wdio#Douglas_fir_Heartwood> <http://www.w3.org/2000/01/rdf-schema#comment> "Douglasie_Kernholz (deutsch)" .
+<https://w3id.org/wdio#Douglas_fir_Heartwood> <http://www.w3.org/2000/01/rdf-schema#label> "Douglas Fir_Heartwood"@en .
+<https://w3id.org/wdio#Douglas_fir_Heartwood> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.wikidata.org/wiki/Q13574159" .
+# 
+# https://w3id.org/wdio#Douglas_fir_Sapwood
+<https://w3id.org/wdio#Douglas_fir_Sapwood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#Douglas_fir_Sapwood> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#Softwood_Sapwood> .
+<https://w3id.org/wdio#Douglas_fir_Sapwood> <http://www.w3.org/2000/01/rdf-schema#comment> "Douglasie_Splintholz (deutsch)" .
+<https://w3id.org/wdio#Douglas_fir_Sapwood> <http://www.w3.org/2000/01/rdf-schema#label> "Douglas Fir_Sapwood"@en .
+<https://w3id.org/wdio#Douglas_fir_Sapwood> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.wikidata.org/wiki/Q13574159" .
+# 
+# https://w3id.org/wdio#Drywood_insects
+<https://w3id.org/wdio#Drywood_insects> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#Drywood_insects> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#Insectclasses> .
+<https://w3id.org/wdio#Drywood_insects> <http://www.w3.org/2000/01/rdf-schema#comment> "Affects dry and semi-dry wood."@en .
+<https://w3id.org/wdio#Drywood_insects> <http://www.w3.org/2000/01/rdf-schema#label> "Drywood insects"@en .
+# 
+# https://w3id.org/wdio#Exchange
+<https://w3id.org/wdio#Exchange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#Exchange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#Treatment> .
+<https://w3id.org/wdio#Exchange> <http://www.w3.org/2000/01/rdf-schema#comment> "Replacement and reinforcement of severely damaged and unsound wooden elements."@en .
+<https://w3id.org/wdio#Exchange> <http://www.w3.org/2000/01/rdf-schema#label> "Exchange"@en .
+# 
+# https://w3id.org/wdio#Fir_Heartwood
+<https://w3id.org/wdio#Fir_Heartwood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#Fir_Heartwood> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#Softwood_Heartwood> .
+<https://w3id.org/wdio#Fir_Heartwood> <http://www.w3.org/2000/01/rdf-schema#comment> "Tanne_Kernholz (deutsch)" .
+<https://w3id.org/wdio#Fir_Heartwood> <http://www.w3.org/2000/01/rdf-schema#label> "Fir_Heartwood"@en .
+<https://w3id.org/wdio#Fir_Heartwood> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.wikidata.org/wiki/Q25350" .
+# 
+# https://w3id.org/wdio#Fir_Sapwood
+<https://w3id.org/wdio#Fir_Sapwood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#Fir_Sapwood> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#Softwood_Sapwood> .
+<https://w3id.org/wdio#Fir_Sapwood> <http://www.w3.org/2000/01/rdf-schema#comment> "Tanne_Splintholz (deutsch)" .
+<https://w3id.org/wdio#Fir_Sapwood> <http://www.w3.org/2000/01/rdf-schema#label> "Fir_Sapwood"@en .
+<https://w3id.org/wdio#Fir_Sapwood> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.wikidata.org/wiki/Q25350" .
+# 
+# https://w3id.org/wdio#Fly_holes
+<https://w3id.org/wdio#Fly_holes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#Fly_holes> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#Damage_characteristics> .
+<https://w3id.org/wdio#Fly_holes> <http://www.w3.org/2000/01/rdf-schema#comment> "Discribes the form and features of the flyholes."@en .
+<https://w3id.org/wdio#Fly_holes> <http://www.w3.org/2000/01/rdf-schema#label> "flyhole attributes"@en .
+# 
+# https://w3id.org/wdio#Flyholeform
+<https://w3id.org/wdio#Flyholeform> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#Flyholeform> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#Insectclasses> .
+<https://w3id.org/wdio#Flyholeform> <http://www.w3.org/2000/01/rdf-schema#comment> "Discribes the form of the flyholes."@en .
+<https://w3id.org/wdio#Flyholeform> <http://www.w3.org/2000/01/rdf-schema#label> "flyholeform"@en .
+# 
+# https://w3id.org/wdio#Freshwood_insects
+<https://w3id.org/wdio#Freshwood_insects> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#Freshwood_insects> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#Insectclasses> .
+<https://w3id.org/wdio#Freshwood_insects> <http://www.w3.org/2000/01/rdf-schema#comment> "Occur on live tree or freshly felled trunks."@en .
+<https://w3id.org/wdio#Freshwood_insects> <http://www.w3.org/2000/01/rdf-schema#label> "Freshwood insects"@en .
+# 
+# https://w3id.org/wdio#Fringed_outlet_holes
+<https://w3id.org/wdio#Fringed_outlet_holes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#Fringed_outlet_holes> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#Fly_holes> .
+<https://w3id.org/wdio#Fringed_outlet_holes> <http://www.w3.org/2000/01/rdf-schema#comment> "The outlet of the fly hole is fringed."@en .
+<https://w3id.org/wdio#Fringed_outlet_holes> <http://www.w3.org/2000/01/rdf-schema#label> "fringed"@en .
+# 
+# https://w3id.org/wdio#GK0
+<https://w3id.org/wdio#GK0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#GK0> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#Hazard_class_according_to_DIN_68800-1> .
+<https://w3id.org/wdio#GK0> <http://www.w3.org/2000/01/rdf-schema#comment> "Wood or wood product under roof, not exposed to weathering and no humidification, the risk of structural damage by insects can be excluded."@en .
+<https://w3id.org/wdio#GK0> <http://www.w3.org/2000/01/rdf-schema#label> "DC0"@en .
+# 
+# https://w3id.org/wdio#GK1
+<https://w3id.org/wdio#GK1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#GK1> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#Hazard_class_according_to_DIN_68800-1> .
+<https://w3id.org/wdio#GK1> <http://www.w3.org/2000/01/rdf-schema#comment> "Wood or wood product under roof, not exposed to weathering and not humidified."@en .
+<https://w3id.org/wdio#GK1> <http://www.w3.org/2000/01/rdf-schema#label> "DC1"@en .
+# 
+# https://w3id.org/wdio#GK2
+<https://w3id.org/wdio#GK2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#GK2> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#Hazard_class_according_to_DIN_68800-1> .
+<https://w3id.org/wdio#GK2> <http://www.w3.org/2000/01/rdf-schema#comment> "Wood or wood product under roof, not exposed to weathering, high ambient humidity can lead to le-gual but not permanent moistening."@en .
+<https://w3id.org/wdio#GK2> <http://www.w3.org/2000/01/rdf-schema#label> "DC2"@en .
+# 
+# https://w3id.org/wdio#GK3a
+<https://w3id.org/wdio#GK3a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#GK3a> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#Hazard_class_according_to_DIN_68800-1> .
+<https://w3id.org/wdio#GK3a> <http://www.w3.org/2000/01/rdf-schema#comment> "Wood or wood product not under roof, with weathering, but without constant contact with soil or water, accumulation of water in the wood, even spatially limited, is not to be expected due to rapid re-drying."@en .
+<https://w3id.org/wdio#GK3a> <http://www.w3.org/2000/01/rdf-schema#label> "DC3a"@en .
+# 
+# https://w3id.org/wdio#GK3b
+<https://w3id.org/wdio#GK3b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#GK3b> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#Hazard_class_according_to_DIN_68800-1> .
+<https://w3id.org/wdio#GK3b> <http://www.w3.org/2000/01/rdf-schema#comment> "Wood or wood product not under roof, with weathering, but without constant contact with soil or water, accumulation of water in the wood, also spatially limited, to be expected."@en .
+<https://w3id.org/wdio#GK3b> <http://www.w3.org/2000/01/rdf-schema#label> "DC3b"@en .
+# 
+# https://w3id.org/wdio#GK4
+<https://w3id.org/wdio#GK4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#GK4> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#Hazard_class_according_to_DIN_68800-1> .
+<https://w3id.org/wdio#GK4> <http://www.w3.org/2000/01/rdf-schema#comment> "Wood or wood product in contact with soil or fresh water and thus mainly to permanently exposed to moisture during moderate to heavy use."@en .
+<https://w3id.org/wdio#GK4> <http://www.w3.org/2000/01/rdf-schema#label> "DC4"@en .
+# 
+# https://w3id.org/wdio#GK5
+<https://w3id.org/wdio#GK5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#GK5> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#Hazard_class_according_to_DIN_68800-1> .
+<https://w3id.org/wdio#GK5> <http://www.w3.org/2000/01/rdf-schema#comment> "Wood or wood product, constantly exposed to seawater."@en .
+<https://w3id.org/wdio#GK5> <http://www.w3.org/2000/01/rdf-schema#label> "DC5"@en .
+# 
+# https://w3id.org/wdio#Gas_methods
+<https://w3id.org/wdio#Gas_methods> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#Gas_methods> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#Treatment> .
+<https://w3id.org/wdio#Gas_methods> <http://www.w3.org/2000/01/rdf-schema#comment> "The fumigation process is based on the application of toxic gases, while the control with modified atmospheres is based on the application of asphyxiating gases."@en .
+<https://w3id.org/wdio#Gas_methods> <http://www.w3.org/2000/01/rdf-schema#label> "Gas method"@en .
+# 
+# https://w3id.org/wdio#Hardwood
+<https://w3id.org/wdio#Hardwood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#Hardwood> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#Wood> .
+<https://w3id.org/wdio#Hardwood> <http://www.w3.org/2000/01/rdf-schema#comment> "Laubholz (deutsch)" .
+<https://w3id.org/wdio#Hardwood> <http://www.w3.org/2000/01/rdf-schema#label> "Hardwood"@en .
+<https://w3id.org/wdio#Hardwood> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.wikidata.org/wiki/Q2266509" .
+# 
+# https://w3id.org/wdio#Hardwood_Heartwood
+<https://w3id.org/wdio#Hardwood_Heartwood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#Hardwood_Heartwood> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#Hardwood> .
+<https://w3id.org/wdio#Hardwood_Heartwood> <http://www.w3.org/2000/01/rdf-schema#label> "Hardwood heartwood"@en .
+# 
+# https://w3id.org/wdio#Hardwood_Sapwood
+<https://w3id.org/wdio#Hardwood_Sapwood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#Hardwood_Sapwood> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#Hardwood> .
+<https://w3id.org/wdio#Hardwood_Sapwood> <http://www.w3.org/2000/01/rdf-schema#label> "Hardwood sapwood"@en .
+# 
+# https://w3id.org/wdio#Hazard_class_according_to_DIN_68800-1
+<https://w3id.org/wdio#Hazard_class_according_to_DIN_68800-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#Hazard_class_according_to_DIN_68800-1> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<https://w3id.org/wdio#Hazard_class_according_to_DIN_68800-1> <http://www.w3.org/2000/01/rdf-schema#comment> "Danger classes (DC) - description of general conditions of use as well as possible hazards/stresses and moisture content of the installed wood. (According to the DIN 68800-1)"@en .
+<https://w3id.org/wdio#Hazard_class_according_to_DIN_68800-1> <http://www.w3.org/2000/01/rdf-schema#label> "Danger classes" .
+# 
+# https://w3id.org/wdio#Hot_Air
+<https://w3id.org/wdio#Hot_Air> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#Hot_Air> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#Treatment> .
+<https://w3id.org/wdio#Hot_Air> <http://www.w3.org/2000/01/rdf-schema#comment> "The hot-air method as a standard sanitation method for combating wood-destroying insects belongs to the thermal methods.\nThe hot air process does not protect the treated wood from new infestation."@en .
+<https://w3id.org/wdio#Hot_Air> <http://www.w3.org/2000/01/rdf-schema#label> "Hot air method"@en .
+# 
+# https://w3id.org/wdio#Injektion
+<https://w3id.org/wdio#Injektion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#Injektion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#Treatment> .
+<https://w3id.org/wdio#Injektion> <http://www.w3.org/2000/01/rdf-schema#comment> "Treatment of the wooden structure with borehole impregnation or borehole pressure impregnation with wood injectors"@en .
+<https://w3id.org/wdio#Injektion> <http://www.w3.org/2000/01/rdf-schema#label> "Injection"@en .
+# 
+# https://w3id.org/wdio#Insectclasses
+<https://w3id.org/wdio#Insectclasses> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#Insectclasses> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#Insects> .
+<https://w3id.org/wdio#Insectclasses> <http://www.w3.org/2000/01/rdf-schema#comment> "Describes superordinate classes that describe characteristics, behavior, and distribution of insects."@en .
+<https://w3id.org/wdio#Insectclasses> <http://www.w3.org/2000/01/rdf-schema#label> "Insectclasses"@en .
+# 
+# https://w3id.org/wdio#Insects
+<https://w3id.org/wdio#Insects> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#Insects> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<https://w3id.org/wdio#Insects> <http://www.w3.org/2000/01/rdf-schema#label> "Insects characteristics"@en .
+<https://w3id.org/wdio#Insects> <http://www.w3.org/2002/07/owl#incompatibleWith> "List of all important wood destroying insects."@en .
+# 
+# https://w3id.org/wdio#Larch_Heartwood
+<https://w3id.org/wdio#Larch_Heartwood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#Larch_Heartwood> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#Softwood_Heartwood> .
+<https://w3id.org/wdio#Larch_Heartwood> <http://www.w3.org/2000/01/rdf-schema#comment> "Lärche_Kernholz (deutsch)" .
+<https://w3id.org/wdio#Larch_Heartwood> <http://www.w3.org/2000/01/rdf-schema#label> "Larch_Heartwood"@en .
+<https://w3id.org/wdio#Larch_Heartwood> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.wikidata.org/wiki/Q1879281" .
+# 
+# https://w3id.org/wdio#Larch_Sapwood
+<https://w3id.org/wdio#Larch_Sapwood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#Larch_Sapwood> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#Softwood_Sapwood> .
+<https://w3id.org/wdio#Larch_Sapwood> <http://www.w3.org/2000/01/rdf-schema#comment> "Lärche_Splintholz (deutsch)" .
+<https://w3id.org/wdio#Larch_Sapwood> <http://www.w3.org/2000/01/rdf-schema#label> "Larch_Sapwood"@en .
+<https://w3id.org/wdio#Larch_Sapwood> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.wikidata.org/wiki/Q1879281" .
+# 
+# https://w3id.org/wdio#Longhorn_beetle
+<https://w3id.org/wdio#Longhorn_beetle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#Longhorn_beetle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#Insectclasses> .
+<https://w3id.org/wdio#Longhorn_beetle> <http://www.w3.org/2000/01/rdf-schema#comment> "Horn-like arranged antennae. Larvae cylindrical flattened. Larval color white, yellowish, ivory. Thickened cull thighs."^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<https://w3id.org/wdio#Longhorn_beetle> <http://www.w3.org/2000/01/rdf-schema#label> "Longhorn beetle"@en .
+# 
+# https://w3id.org/wdio#Make_hearable_nagging_noise
+<https://w3id.org/wdio#Make_hearable_nagging_noise> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#Make_hearable_nagging_noise> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#Insectclasses> .
+<https://w3id.org/wdio#Make_hearable_nagging_noise> <http://www.w3.org/2000/01/rdf-schema#comment> "Is is possible to hear nagging noises fom the insects."@en .
+<https://w3id.org/wdio#Make_hearable_nagging_noise> <http://www.w3.org/2000/01/rdf-schema#label> "Making hearable noise"@en .
+# 
+# https://w3id.org/wdio#Oak_Heartwood
+<https://w3id.org/wdio#Oak_Heartwood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#Oak_Heartwood> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#Hardwood_Heartwood> .
+<https://w3id.org/wdio#Oak_Heartwood> <http://www.w3.org/2000/01/rdf-schema#comment> "Eiche_Kernholz (deutsch)" .
+<https://w3id.org/wdio#Oak_Heartwood> <http://www.w3.org/2000/01/rdf-schema#label> "Oak_Heartwood"@en .
+<https://w3id.org/wdio#Oak_Heartwood> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.wikidata.org/wiki/Q2075708" .
+# 
+# https://w3id.org/wdio#Oak_Sapwood
+<https://w3id.org/wdio#Oak_Sapwood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#Oak_Sapwood> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#Hardwood_Sapwood> .
+<https://w3id.org/wdio#Oak_Sapwood> <http://www.w3.org/2000/01/rdf-schema#comment> "Eiche_Splintholz (deutsch)" .
+<https://w3id.org/wdio#Oak_Sapwood> <http://www.w3.org/2000/01/rdf-schema#label> "Oak_Sapwood"@en .
+<https://w3id.org/wdio#Oak_Sapwood> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.wikidata.org/wiki/Q2075708" .
+# 
+# https://w3id.org/wdio#Pine_Heartwood
+<https://w3id.org/wdio#Pine_Heartwood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#Pine_Heartwood> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#Softwood_Heartwood> .
+<https://w3id.org/wdio#Pine_Heartwood> <http://www.w3.org/2000/01/rdf-schema#comment> "Kiefer_Kernholz (deutsch)" .
+<https://w3id.org/wdio#Pine_Heartwood> <http://www.w3.org/2000/01/rdf-schema#label> "Pine_Heartwood"@en .
+<https://w3id.org/wdio#Pine_Heartwood> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.wikidata.org/wiki/Q1503211" .
+# 
+# https://w3id.org/wdio#Pine_Sapwood
+<https://w3id.org/wdio#Pine_Sapwood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#Pine_Sapwood> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#Softwood_Sapwood> .
+<https://w3id.org/wdio#Pine_Sapwood> <http://www.w3.org/2000/01/rdf-schema#comment> "Kiefer_Splintholz (deutsch)" .
+<https://w3id.org/wdio#Pine_Sapwood> <http://www.w3.org/2000/01/rdf-schema#label> "Pine_Sapwood"@en .
+<https://w3id.org/wdio#Pine_Sapwood> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.wikidata.org/wiki/Q1503211" .
+# 
+# https://w3id.org/wdio#Redbeech_Heartwood
+<https://w3id.org/wdio#Redbeech_Heartwood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#Redbeech_Heartwood> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#Hardwood_Heartwood> .
+<https://w3id.org/wdio#Redbeech_Heartwood> <http://www.w3.org/2000/01/rdf-schema#comment> "Rotbuche_Kernholz (deutsch)" .
+<https://w3id.org/wdio#Redbeech_Heartwood> <http://www.w3.org/2000/01/rdf-schema#label> "Redbeech_Heartwood"@en .
+<https://w3id.org/wdio#Redbeech_Heartwood> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.wikidata.org/wiki/Q146149" .
+# 
+# https://w3id.org/wdio#Redbeech_Sapwood
+<https://w3id.org/wdio#Redbeech_Sapwood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#Redbeech_Sapwood> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#Hardwood_Sapwood> .
+<https://w3id.org/wdio#Redbeech_Sapwood> <http://www.w3.org/2000/01/rdf-schema#comment> "Rotbuche_Splintholz (deutsch)" .
+<https://w3id.org/wdio#Redbeech_Sapwood> <http://www.w3.org/2000/01/rdf-schema#label> "Redbeech_Sapwood"@en .
+<https://w3id.org/wdio#Redbeech_Sapwood> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.wikidata.org/wiki/Q146149" .
+# 
+# https://w3id.org/wdio#Report_is_required
+<https://w3id.org/wdio#Report_is_required> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#Report_is_required> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#Damage_characteristics> .
+<https://w3id.org/wdio#Report_is_required> <http://www.w3.org/2000/01/rdf-schema#comment> "The classification of this insect is to report to the local authorities."@en .
+<https://w3id.org/wdio#Report_is_required> <http://www.w3.org/2000/01/rdf-schema#label> "reportable_insect"@en .
+# 
+# https://w3id.org/wdio#Roll-shaped
+<https://w3id.org/wdio#Roll-shaped> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#Roll-shaped> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#feces> .
+<https://w3id.org/wdio#Roll-shaped> <http://www.w3.org/2000/01/rdf-schema#comment> "Feces pills are lenticular."@en .
+<https://w3id.org/wdio#Roll-shaped> <http://www.w3.org/2000/01/rdf-schema#label> "roll-shaped"@en .
+# 
+# https://w3id.org/wdio#Rottenwood_Insects
+<https://w3id.org/wdio#Rottenwood_Insects> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#Rottenwood_Insects> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#Insectclasses> .
+<https://w3id.org/wdio#Rottenwood_Insects> <http://www.w3.org/2000/01/rdf-schema#comment> "Primarily found in wood pre-damaged by fungi. Suspect hidden fungal damage when found."^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<https://w3id.org/wdio#Rottenwood_Insects> <http://www.w3.org/2000/01/rdf-schema#label> "Rottenwood insect"@en .
+# 
+# https://w3id.org/wdio#Sapwood_beetle
+<https://w3id.org/wdio#Sapwood_beetle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#Sapwood_beetle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#Insectclasses> .
+<https://w3id.org/wdio#Sapwood_beetle> <http://www.w3.org/2000/01/rdf-schema#comment> "This insects are only affecting sapwood of hardwood."@en .
+<https://w3id.org/wdio#Sapwood_beetle> <http://www.w3.org/2000/01/rdf-schema#label> "Sapwood beetle"@en .
+# 
+# https://w3id.org/wdio#Smooth_outlet_holes
+<https://w3id.org/wdio#Smooth_outlet_holes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#Smooth_outlet_holes> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#Fly_holes> .
+<https://w3id.org/wdio#Smooth_outlet_holes> <http://www.w3.org/2000/01/rdf-schema#comment> "The outlet of the fly hole is smooth."@en .
+<https://w3id.org/wdio#Smooth_outlet_holes> <http://www.w3.org/2000/01/rdf-schema#label> "smooth"@en .
+# 
+# https://w3id.org/wdio#Softwood
+<https://w3id.org/wdio#Softwood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#Softwood> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#Wood> .
+<https://w3id.org/wdio#Softwood> <http://www.w3.org/2000/01/rdf-schema#comment> "Nadelholz (deutsch)" .
+<https://w3id.org/wdio#Softwood> <http://www.w3.org/2000/01/rdf-schema#label> "Softwood"@en .
+<https://w3id.org/wdio#Softwood> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.wikidata.org/wiki/Q252108" .
+# 
+# https://w3id.org/wdio#Softwood_Heartwood
+<https://w3id.org/wdio#Softwood_Heartwood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#Softwood_Heartwood> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#Softwood> .
+<https://w3id.org/wdio#Softwood_Heartwood> <http://www.w3.org/2000/01/rdf-schema#label> "Softwood heartwood"@en .
+# 
+# https://w3id.org/wdio#Softwood_Sapwood
+<https://w3id.org/wdio#Softwood_Sapwood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#Softwood_Sapwood> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#Softwood> .
+<https://w3id.org/wdio#Softwood_Sapwood> <http://www.w3.org/2000/01/rdf-schema#label> "Softwood sapwood"@en .
+# 
+# https://w3id.org/wdio#Special_Features
+<https://w3id.org/wdio#Special_Features> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#Special_Features> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#Damage_characteristics> .
+<https://w3id.org/wdio#Special_Features> <http://www.w3.org/2000/01/rdf-schema#comment> "Describes a unique feature of an insect."@en .
+<https://w3id.org/wdio#Special_Features> <http://www.w3.org/2000/01/rdf-schema#label> "Special features"@en .
+# 
+# https://w3id.org/wdio#Spruce_Heartwood
+<https://w3id.org/wdio#Spruce_Heartwood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#Spruce_Heartwood> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#Softwood_Heartwood> .
+<https://w3id.org/wdio#Spruce_Heartwood> <http://www.w3.org/2000/01/rdf-schema#comment> "Fichte_Kernholz (deutsch)" .
+<https://w3id.org/wdio#Spruce_Heartwood> <http://www.w3.org/2000/01/rdf-schema#label> "Spruce_Heartwood"@en .
+<https://w3id.org/wdio#Spruce_Heartwood> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.wikidata.org/wiki/Q26782" .
+# 
+# https://w3id.org/wdio#Spruce_Sapwood
+<https://w3id.org/wdio#Spruce_Sapwood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#Spruce_Sapwood> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#Softwood_Sapwood> .
+<https://w3id.org/wdio#Spruce_Sapwood> <http://www.w3.org/2000/01/rdf-schema#comment> "Fichte_Splintholz (deutsch)" .
+<https://w3id.org/wdio#Spruce_Sapwood> <http://www.w3.org/2000/01/rdf-schema#label> "Spruce_Sapwood"@en .
+<https://w3id.org/wdio#Spruce_Sapwood> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.wikidata.org/wiki/Q26782" .
+# 
+# https://w3id.org/wdio#Treatment
+<https://w3id.org/wdio#Treatment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#Treatment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#load_bearing_structure_relevant> .
+<https://w3id.org/wdio#Treatment> <http://www.w3.org/2000/01/rdf-schema#comment> "Treatment_according_to_DIN_68800-4"@en .
+<https://w3id.org/wdio#Treatment> <http://www.w3.org/2000/01/rdf-schema#label> "Treatment"@en .
+# 
+# https://w3id.org/wdio#Wood
+<https://w3id.org/wdio#Wood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#Wood> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<https://w3id.org/wdio#Wood> <http://www.w3.org/2000/01/rdf-schema#comment> "Fibrous material from trees or other plants."@en .
+<https://w3id.org/wdio#Wood> <http://www.w3.org/2000/01/rdf-schema#label> "Wood" .
+<https://w3id.org/wdio#Wood> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.wikidata.org/wiki/Q287" .
+# 
+# https://w3id.org/wdio#acyclic_action
+<https://w3id.org/wdio#acyclic_action> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#acyclic_action> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#insect_cycle> .
+<https://w3id.org/wdio#acyclic_action> <http://www.w3.org/2000/01/rdf-schema#comment> "Insects of this class are usually affecting the wood for one period. After hatching, the insects fly out and leave the structure."@en .
+<https://w3id.org/wdio#acyclic_action> <http://www.w3.org/2000/01/rdf-schema#label> "Acyclic"@en .
+# 
+# https://w3id.org/wdio#black
+<https://w3id.org/wdio#black> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#black> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#Colors> .
+<https://w3id.org/wdio#black> <http://www.w3.org/2000/01/rdf-schema#comment> "Color type."@en .
+<https://w3id.org/wdio#black> <http://www.w3.org/2000/01/rdf-schema#label> "Black"@en .
+<https://w3id.org/wdio#black> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.wikidata.org/wiki/Q23445" .
+# 
+# https://w3id.org/wdio#blue
+<https://w3id.org/wdio#blue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#blue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#Colors> .
+<https://w3id.org/wdio#blue> <http://www.w3.org/2000/01/rdf-schema#comment> "Color type."@en .
+<https://w3id.org/wdio#blue> <http://www.w3.org/2000/01/rdf-schema#label> "Blue"@en .
+<https://w3id.org/wdio#blue> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.wikidata.org/wiki/Q1088" .
+# 
+# https://w3id.org/wdio#bronze
+<https://w3id.org/wdio#bronze> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#bronze> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#Colors> .
+<https://w3id.org/wdio#bronze> <http://www.w3.org/2000/01/rdf-schema#comment> "Color type."@en .
+<https://w3id.org/wdio#bronze> <http://www.w3.org/2000/01/rdf-schema#label> "Bronze"@en .
+<https://w3id.org/wdio#bronze> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.wikidata.org/wiki/Q2778382" .
+# 
+# https://w3id.org/wdio#brown
+<https://w3id.org/wdio#brown> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#brown> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#Colors> .
+<https://w3id.org/wdio#brown> <http://www.w3.org/2000/01/rdf-schema#comment> "Color type."@en .
+<https://w3id.org/wdio#brown> <http://www.w3.org/2000/01/rdf-schema#label> "Brown"@en .
+<https://w3id.org/wdio#brown> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.wikidata.org/wiki/Q47071" .
+# 
+# https://w3id.org/wdio#cyclic_action
+<https://w3id.org/wdio#cyclic_action> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#cyclic_action> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#insect_cycle> .
+<https://w3id.org/wdio#cyclic_action> <http://www.w3.org/2000/01/rdf-schema#comment> "Insects of this class are usually affecting the wood for more than one period. After hatching, the insects direcly mate and lay eggs in the same structure."@en .
+<https://w3id.org/wdio#cyclic_action> <http://www.w3.org/2000/01/rdf-schema#label> "Cyclic"@en .
+# 
+# https://w3id.org/wdio#feces
+<https://w3id.org/wdio#feces> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#feces> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#Damage_characteristics> .
+<https://w3id.org/wdio#feces> <http://www.w3.org/2000/01/rdf-schema#comment> "Describes the residues from insect feeding activities."@en .
+<https://w3id.org/wdio#feces> <http://www.w3.org/2000/01/rdf-schema#label> "Feces"@en .
+# 
+# https://w3id.org/wdio#fine_and_dusty
+<https://w3id.org/wdio#fine_and_dusty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#fine_and_dusty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#feces> .
+<https://w3id.org/wdio#fine_and_dusty> <http://www.w3.org/2000/01/rdf-schema#comment> "Fine wood flour. The fecal pills have partially long drawn ends."@en .
+<https://w3id.org/wdio#fine_and_dusty> <http://www.w3.org/2000/01/rdf-schema#label> "fine and dusty"@en .
+# 
+# https://w3id.org/wdio#frequency
+<https://w3id.org/wdio#frequency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#frequency> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#Insectclasses> .
+<https://w3id.org/wdio#frequency> <http://www.w3.org/2000/01/rdf-schema#comment> "Describes the freqeucy of the insect."@en .
+<https://w3id.org/wdio#frequency> <http://www.w3.org/2000/01/rdf-schema#label> "Frequency"@en .
+# 
+# https://w3id.org/wdio#insect_cycle
+<https://w3id.org/wdio#insect_cycle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#insect_cycle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#Insectclasses> .
+<https://w3id.org/wdio#insect_cycle> <http://www.w3.org/2000/01/rdf-schema#comment> "Discribes the cycle behavior of the insect."@en .
+<https://w3id.org/wdio#insect_cycle> <http://www.w3.org/2000/01/rdf-schema#label> "Insect cycle"@en .
+# 
+# https://w3id.org/wdio#ivory
+<https://w3id.org/wdio#ivory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#ivory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#Colors> .
+<https://w3id.org/wdio#ivory> <http://www.w3.org/2000/01/rdf-schema#comment> "Color type."@en .
+<https://w3id.org/wdio#ivory> <http://www.w3.org/2000/01/rdf-schema#label> "Ivory"@en .
+<https://w3id.org/wdio#ivory> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.wikidata.org/wiki/Q1358981" .
+# 
+# https://w3id.org/wdio#light_yellow
+<https://w3id.org/wdio#light_yellow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#light_yellow> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#Colors> .
+<https://w3id.org/wdio#light_yellow> <http://www.w3.org/2000/01/rdf-schema#comment> "Color type."@en .
+<https://w3id.org/wdio#light_yellow> <http://www.w3.org/2000/01/rdf-schema#label> "Light Yellow"@en .
+<https://w3id.org/wdio#light_yellow> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.wikidata.org/wiki/Q68223248" .
+# 
+# https://w3id.org/wdio#load_bearing_structure_irrelevant
+<https://w3id.org/wdio#load_bearing_structure_irrelevant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#load_bearing_structure_irrelevant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#Damage_characteristics> .
+<https://w3id.org/wdio#load_bearing_structure_irrelevant> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/wdio#load_bearing_structure_relevant> .
+<https://w3id.org/wdio#load_bearing_structure_irrelevant> <http://www.w3.org/2000/01/rdf-schema#comment> "The damage is not relevant for load bearing structure."@en .
+<https://w3id.org/wdio#load_bearing_structure_irrelevant> <http://www.w3.org/2000/01/rdf-schema#label> "bearing_irrelevant"@en .
+# 
+# https://w3id.org/wdio#load_bearing_structure_relevant
+<https://w3id.org/wdio#load_bearing_structure_relevant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#load_bearing_structure_relevant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#Damage_characteristics> .
+<https://w3id.org/wdio#load_bearing_structure_relevant> <http://www.w3.org/2000/01/rdf-schema#comment> "The damage is relevant for load bearing structure."@en .
+<https://w3id.org/wdio#load_bearing_structure_relevant> <http://www.w3.org/2000/01/rdf-schema#label> "bearing_relevant"@en .
+# 
+# https://w3id.org/wdio#often
+<https://w3id.org/wdio#often> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#often> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#frequency> .
+<https://w3id.org/wdio#often> <http://www.w3.org/2000/01/rdf-schema#comment> "Insects of this class are often found as wooddestroyer."@en .
+<https://w3id.org/wdio#often> <http://www.w3.org/2000/01/rdf-schema#label> "Often found"@en .
+# 
+# https://w3id.org/wdio#oval
+<https://w3id.org/wdio#oval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#oval> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#Flyholeform> .
+<https://w3id.org/wdio#oval> <http://www.w3.org/2000/01/rdf-schema#comment> "The flyhole is oval."@en .
+<https://w3id.org/wdio#oval> <http://www.w3.org/2000/01/rdf-schema#label> "oval"@en .
+# 
+# https://w3id.org/wdio#red
+<https://w3id.org/wdio#red> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#red> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#Colors> .
+<https://w3id.org/wdio#red> <http://www.w3.org/2000/01/rdf-schema#comment> "Color type."@en .
+<https://w3id.org/wdio#red> <http://www.w3.org/2000/01/rdf-schema#label> "Red"@en .
+<https://w3id.org/wdio#red> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.wikidata.org/wiki/Q3142" .
+# 
+# https://w3id.org/wdio#round
+<https://w3id.org/wdio#round> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#round> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#Flyholeform> .
+<https://w3id.org/wdio#round> <http://www.w3.org/2000/01/rdf-schema#comment> "The flyhole is round."@en .
+<https://w3id.org/wdio#round> <http://www.w3.org/2000/01/rdf-schema#label> "round"@en .
+# 
+# https://w3id.org/wdio#seldom
+<https://w3id.org/wdio#seldom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#seldom> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#frequency> .
+<https://w3id.org/wdio#seldom> <http://www.w3.org/2000/01/rdf-schema#comment> "Insects of this class are seldom found as wooddestroyer."@en .
+<https://w3id.org/wdio#seldom> <http://www.w3.org/2000/01/rdf-schema#label> "Seldom found"@en .
+# 
+# https://w3id.org/wdio#unknown_insect
+<https://w3id.org/wdio#unknown_insect> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#unknown_insect> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/wdio#GK2> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#is_affecting> .
+_:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/wdio#GK1> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#unknown_insect> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid5 .
+_:genid5 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/wdio#round> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_flyholeform> .
+_:genid7 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/wdio#oval> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#unknown_insect> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid9 .
+_:genid9 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#is_affecting> .
+_:genid15 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/wdio#Fir_Sapwood> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#is_affecting> .
+_:genid13 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/wdio#Pine_Sapwood> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#is_affecting> .
+_:genid11 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/wdio#Spruce_Sapwood> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#unknown_insect> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid16 .
+_:genid16 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_fly_hole_size> .
+_:genid22 <http://www.w3.org/2002/07/owl#hasValue> "5"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_fly_hole_size> .
+_:genid20 <http://www.w3.org/2002/07/owl#hasValue> "6"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_fly_hole_size> .
+_:genid18 <http://www.w3.org/2002/07/owl#hasValue> "7"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#unknown_insect> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<https://w3id.org/wdio#unknown_insect> <http://www.w3.org/2000/01/rdf-schema#comment> "In this class you can describe your finding about the damage. Plaese write the finings in the class \"Equivalent To\" and the start the reasoner!"@en .
+<https://w3id.org/wdio#unknown_insect> <http://www.w3.org/2000/01/rdf-schema#label> "Reasoning your damage"@en .
+# 
+# https://w3id.org/wdio#white
+<https://w3id.org/wdio#white> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#white> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#Colors> .
+<https://w3id.org/wdio#white> <http://www.w3.org/2000/01/rdf-schema#comment> "Color type."@en .
+<https://w3id.org/wdio#white> <http://www.w3.org/2000/01/rdf-schema#label> "White"@en .
+<https://w3id.org/wdio#white> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.wikidata.org/wiki/Q23444" .
+# 
+# https://w3id.org/wdio#woodboring_beetle
+<https://w3id.org/wdio#woodboring_beetle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#woodboring_beetle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#Insectclasses> .
+<https://w3id.org/wdio#woodboring_beetle> <http://www.w3.org/2000/01/rdf-schema#comment> "All anobia are small beetles with brownish color with a typical neck shield that covers the neck like a hood.  The exit holes are circular with a diameter of 1.5 - 3.5mm. The larvae are white and have three pairs of legs. Depending on the species, the beetles live in dry hardwood and/or hardwood as well as moist fungus-infested wood."@en .
+<https://w3id.org/wdio#woodboring_beetle> <http://www.w3.org/2000/01/rdf-schema#label> "Woodboring beetle"@en .
+# 
+# https://w3id.org/wdio#yellow
+<https://w3id.org/wdio#yellow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#yellow> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wdio#Colors> .
+<https://w3id.org/wdio#yellow> <http://www.w3.org/2000/01/rdf-schema#comment> "Color type."@en .
+<https://w3id.org/wdio#yellow> <http://www.w3.org/2000/01/rdf-schema#label> "Yellow"@en .
+<https://w3id.org/wdio#yellow> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.wikidata.org/wiki/Q943" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/wdio#Blauer_Scheibenbock
+<https://w3id.org/wdio#Blauer_Scheibenbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/wdio#Blauer_Scheibenbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Douglas_fir_Sapwood> .
+<https://w3id.org/wdio#Blauer_Scheibenbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Fir_Sapwood> .
+<https://w3id.org/wdio#Blauer_Scheibenbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Freshwood_insects> .
+<https://w3id.org/wdio#Blauer_Scheibenbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#GK4> .
+<https://w3id.org/wdio#Blauer_Scheibenbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#GK5> .
+<https://w3id.org/wdio#Blauer_Scheibenbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Insectclasses> .
+<https://w3id.org/wdio#Blauer_Scheibenbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Insects> .
+<https://w3id.org/wdio#Blauer_Scheibenbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Larch_Sapwood> .
+<https://w3id.org/wdio#Blauer_Scheibenbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Longhorn_beetle> .
+<https://w3id.org/wdio#Blauer_Scheibenbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Pine_Sapwood> .
+<https://w3id.org/wdio#Blauer_Scheibenbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Smooth_outlet_holes> .
+<https://w3id.org/wdio#Blauer_Scheibenbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Spruce_Sapwood> .
+<https://w3id.org/wdio#Blauer_Scheibenbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#acyclic_action> .
+<https://w3id.org/wdio#Blauer_Scheibenbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#load_bearing_structure_irrelevant> .
+<https://w3id.org/wdio#Blauer_Scheibenbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#often> .
+<https://w3id.org/wdio#Blauer_Scheibenbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#oval> .
+<https://w3id.org/wdio#Blauer_Scheibenbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid23 .
+_:genid23 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_fly_hole_size> .
+_:genid29 <http://www.w3.org/2002/07/owl#hasValue> "4"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_fly_hole_size> .
+_:genid27 <http://www.w3.org/2002/07/owl#hasValue> "5"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_fly_hole_size> .
+_:genid25 <http://www.w3.org/2002/07/owl#hasValue> "6"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#Blauer_Scheibenbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid30 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_bodycolor> .
+_:genid30 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/wdio#blue> .
+<https://w3id.org/wdio#Blauer_Scheibenbock> <http://www.w3.org/2000/01/rdf-schema#label> "Blauer Scheibenbock"@de .
+<https://w3id.org/wdio#Blauer_Scheibenbock> <http://www.w3.org/2000/01/rdf-schema#label> "Callidium violaceum"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<https://w3id.org/wdio#Blauer_Scheibenbock> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.wikidata.org/wiki/Q748359"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# https://w3id.org/wdio#Grubenhalsbock
+<https://w3id.org/wdio#Grubenhalsbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/wdio#Grubenhalsbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Douglas_fir_Heartwood> .
+<https://w3id.org/wdio#Grubenhalsbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Douglas_fir_Sapwood> .
+<https://w3id.org/wdio#Grubenhalsbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Fir_Heartwood> .
+<https://w3id.org/wdio#Grubenhalsbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Fir_Sapwood> .
+<https://w3id.org/wdio#Grubenhalsbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Freshwood_insects> .
+<https://w3id.org/wdio#Grubenhalsbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Fringed_outlet_holes> .
+<https://w3id.org/wdio#Grubenhalsbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#GK4> .
+<https://w3id.org/wdio#Grubenhalsbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#GK5> .
+<https://w3id.org/wdio#Grubenhalsbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Insects> .
+<https://w3id.org/wdio#Grubenhalsbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Larch_Heartwood> .
+<https://w3id.org/wdio#Grubenhalsbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Larch_Sapwood> .
+<https://w3id.org/wdio#Grubenhalsbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Longhorn_beetle> .
+<https://w3id.org/wdio#Grubenhalsbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Pine_Heartwood> .
+<https://w3id.org/wdio#Grubenhalsbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Pine_Sapwood> .
+<https://w3id.org/wdio#Grubenhalsbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Smooth_outlet_holes> .
+<https://w3id.org/wdio#Grubenhalsbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Spruce_Heartwood> .
+<https://w3id.org/wdio#Grubenhalsbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Spruce_Sapwood> .
+<https://w3id.org/wdio#Grubenhalsbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#acyclic_action> .
+<https://w3id.org/wdio#Grubenhalsbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#load_bearing_structure_irrelevant> .
+<https://w3id.org/wdio#Grubenhalsbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#oval> .
+<https://w3id.org/wdio#Grubenhalsbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#seldom> .
+<https://w3id.org/wdio#Grubenhalsbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid31 .
+_:genid31 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid44 .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid45 .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid45 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_fly_hole_size> .
+_:genid45 <http://www.w3.org/2002/07/owl#hasValue> "10"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid43 .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid43 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_fly_hole_size> .
+_:genid43 <http://www.w3.org/2002/07/owl#hasValue> "11"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid41 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_fly_hole_size> .
+_:genid41 <http://www.w3.org/2002/07/owl#hasValue> "12"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid39 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_fly_hole_size> .
+_:genid39 <http://www.w3.org/2002/07/owl#hasValue> "6"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid37 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_fly_hole_size> .
+_:genid37 <http://www.w3.org/2002/07/owl#hasValue> "7"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid35 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_fly_hole_size> .
+_:genid35 <http://www.w3.org/2002/07/owl#hasValue> "8"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_fly_hole_size> .
+_:genid33 <http://www.w3.org/2002/07/owl#hasValue> "9"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#Grubenhalsbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid46 .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid46 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_bodycolor> .
+_:genid46 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/wdio#brown> .
+<https://w3id.org/wdio#Grubenhalsbock> <http://www.w3.org/2000/01/rdf-schema#label> "Grubenhalsbock"@de .
+<https://w3id.org/wdio#Grubenhalsbock> <http://www.w3.org/2000/01/rdf-schema#label> "Criocephalus rusticus"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<https://w3id.org/wdio#Grubenhalsbock> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.wikidata.org/wiki/Q1265892"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# https://w3id.org/wdio#Hausbock
+<https://w3id.org/wdio#Hausbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/wdio#Hausbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Cylinder_form> .
+<https://w3id.org/wdio#Hausbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Drywood_insects> .
+<https://w3id.org/wdio#Hausbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Fir_Sapwood> .
+<https://w3id.org/wdio#Hausbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Fringed_outlet_holes> .
+<https://w3id.org/wdio#Hausbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#GK1> .
+<https://w3id.org/wdio#Hausbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#GK2> .
+<https://w3id.org/wdio#Hausbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#GK3a> .
+<https://w3id.org/wdio#Hausbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#GK3b> .
+<https://w3id.org/wdio#Hausbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#GK4> .
+<https://w3id.org/wdio#Hausbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#GK5> .
+<https://w3id.org/wdio#Hausbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Insectclasses> .
+<https://w3id.org/wdio#Hausbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Insects> .
+<https://w3id.org/wdio#Hausbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Larch_Sapwood> .
+<https://w3id.org/wdio#Hausbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Longhorn_beetle> .
+<https://w3id.org/wdio#Hausbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Make_hearable_nagging_noise> .
+<https://w3id.org/wdio#Hausbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Pine_Sapwood> .
+<https://w3id.org/wdio#Hausbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Report_is_required> .
+<https://w3id.org/wdio#Hausbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Smooth_outlet_holes> .
+<https://w3id.org/wdio#Hausbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#cyclic_action> .
+<https://w3id.org/wdio#Hausbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#fine_and_dusty> .
+<https://w3id.org/wdio#Hausbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#load_bearing_structure_irrelevant> .
+<https://w3id.org/wdio#Hausbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#often> .
+<https://w3id.org/wdio#Hausbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#oval> .
+<https://w3id.org/wdio#Hausbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid47 .
+_:genid47 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid54 .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid55 .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid55 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_fly_hole_size> .
+_:genid55 <http://www.w3.org/2002/07/owl#hasValue> "4"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid52 .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid53 .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid53 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_fly_hole_size> .
+_:genid53 <http://www.w3.org/2002/07/owl#hasValue> "5"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid50 .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid51 .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid51 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_fly_hole_size> .
+_:genid51 <http://www.w3.org/2002/07/owl#hasValue> "6"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid48 .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid49 .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid49 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_fly_hole_size> .
+_:genid49 <http://www.w3.org/2002/07/owl#hasValue> "7"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#Hausbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid56 .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid56 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_bodycolor> .
+_:genid56 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/wdio#black> .
+<https://w3id.org/wdio#Hausbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid57 .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid57 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_bodycolor> .
+_:genid57 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/wdio#brown> .
+<https://w3id.org/wdio#Hausbock> <http://www.w3.org/2000/01/rdf-schema#label> "Hausbock"@de .
+<https://w3id.org/wdio#Hausbock> <http://www.w3.org/2000/01/rdf-schema#label> "hylotrupes bajulus"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<https://w3id.org/wdio#Hausbock> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.wikidata.org/wiki/Q21121"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# https://w3id.org/wdio#Holzwespen
+<https://w3id.org/wdio#Holzwespen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/wdio#Holzwespen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Cylinder_form> .
+<https://w3id.org/wdio#Holzwespen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Douglas_fir_Sapwood> .
+<https://w3id.org/wdio#Holzwespen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Fir_Sapwood> .
+<https://w3id.org/wdio#Holzwespen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Freshwood_insects> .
+<https://w3id.org/wdio#Holzwespen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#GK4> .
+<https://w3id.org/wdio#Holzwespen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#GK5> .
+<https://w3id.org/wdio#Holzwespen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Insectclasses> .
+<https://w3id.org/wdio#Holzwespen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Insects> .
+<https://w3id.org/wdio#Holzwespen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Larch_Sapwood> .
+<https://w3id.org/wdio#Holzwespen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Pine_Sapwood> .
+<https://w3id.org/wdio#Holzwespen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Smooth_outlet_holes> .
+<https://w3id.org/wdio#Holzwespen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Spruce_Sapwood> .
+<https://w3id.org/wdio#Holzwespen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#acyclic_action> .
+<https://w3id.org/wdio#Holzwespen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#load_bearing_structure_irrelevant> .
+<https://w3id.org/wdio#Holzwespen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#often> .
+<https://w3id.org/wdio#Holzwespen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#round> .
+<https://w3id.org/wdio#Holzwespen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid58 .
+_:genid58 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid71 .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid72 .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid72 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_fly_hole_size> .
+_:genid72 <http://www.w3.org/2002/07/owl#hasValue> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid69 .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid70 .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid70 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_fly_hole_size> .
+_:genid70 <http://www.w3.org/2002/07/owl#hasValue> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid67 .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid68 .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid68 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_fly_hole_size> .
+_:genid68 <http://www.w3.org/2002/07/owl#hasValue> "4"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid65 .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid66 .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid66 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_fly_hole_size> .
+_:genid66 <http://www.w3.org/2002/07/owl#hasValue> "5"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid63 .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid64 .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid64 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_fly_hole_size> .
+_:genid64 <http://www.w3.org/2002/07/owl#hasValue> "6"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid61 .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid62 .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid62 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_fly_hole_size> .
+_:genid62 <http://www.w3.org/2002/07/owl#hasValue> "7"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid59 .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid60 .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid60 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_fly_hole_size> .
+_:genid60 <http://www.w3.org/2002/07/owl#hasValue> "8"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#Holzwespen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid73 .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid73 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_bodycolor> .
+_:genid73 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/wdio#black> .
+<https://w3id.org/wdio#Holzwespen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid74 .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid74 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_bodycolor> .
+_:genid74 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/wdio#yellow> .
+<https://w3id.org/wdio#Holzwespen> <http://www.w3.org/2000/01/rdf-schema#label> "Holzwespen"@de .
+<https://w3id.org/wdio#Holzwespen> <http://www.w3.org/2000/01/rdf-schema#label> "urocerus gigas"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<https://w3id.org/wdio#Holzwespen> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.wikidata.org/wiki/Q967809"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# https://w3id.org/wdio#Kapuzinerkäfer
+<https://w3id.org/wdio#Kapuzinerk\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/wdio#Kapuzinerk\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Drywood_insects> .
+<https://w3id.org/wdio#Kapuzinerk\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#GK1> .
+<https://w3id.org/wdio#Kapuzinerk\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#GK2> .
+<https://w3id.org/wdio#Kapuzinerk\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#GK3a> .
+<https://w3id.org/wdio#Kapuzinerk\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#GK3b> .
+<https://w3id.org/wdio#Kapuzinerk\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#GK4> .
+<https://w3id.org/wdio#Kapuzinerk\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#GK5> .
+<https://w3id.org/wdio#Kapuzinerk\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Insects> .
+<https://w3id.org/wdio#Kapuzinerk\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Oak_Heartwood> .
+<https://w3id.org/wdio#Kapuzinerk\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Oak_Sapwood> .
+<https://w3id.org/wdio#Kapuzinerk\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Smooth_outlet_holes> .
+<https://w3id.org/wdio#Kapuzinerk\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#acyclic_action> .
+<https://w3id.org/wdio#Kapuzinerk\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#load_bearing_structure_irrelevant> .
+<https://w3id.org/wdio#Kapuzinerk\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#round> .
+<https://w3id.org/wdio#Kapuzinerk\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#seldom> .
+<https://w3id.org/wdio#Kapuzinerk\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid75 .
+_:genid75 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid80 .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid81 .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid81 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_fly_hole_size> .
+_:genid81 <http://www.w3.org/2002/07/owl#hasValue> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid78 .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid79 .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid79 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_fly_hole_size> .
+_:genid79 <http://www.w3.org/2002/07/owl#hasValue> "4"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid76 .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid77 .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid77 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_fly_hole_size> .
+_:genid77 <http://www.w3.org/2002/07/owl#hasValue> "5"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#Kapuzinerk\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid82 .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid82 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_bodycolor> .
+_:genid82 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/wdio#black> .
+<https://w3id.org/wdio#Kapuzinerk\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid83 .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid83 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_bodycolor> .
+_:genid83 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/wdio#brown> .
+<https://w3id.org/wdio#Kapuzinerk\u00E4fer> <http://www.w3.org/2000/01/rdf-schema#label> "Kapuzinerkäfer"@de .
+<https://w3id.org/wdio#Kapuzinerk\u00E4fer> <http://www.w3.org/2000/01/rdf-schema#label> "bostrychus capucinus"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<https://w3id.org/wdio#Kapuzinerk\u00E4fer> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.wikidata.org/wiki/Q1734080"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# https://w3id.org/wdio#Rothalsbock
+<https://w3id.org/wdio#Rothalsbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/wdio#Rothalsbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Douglas_fir_Sapwood> .
+<https://w3id.org/wdio#Rothalsbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Fir_Sapwood> .
+<https://w3id.org/wdio#Rothalsbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Freshwood_insects> .
+<https://w3id.org/wdio#Rothalsbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Fringed_outlet_holes> .
+<https://w3id.org/wdio#Rothalsbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#GK4> .
+<https://w3id.org/wdio#Rothalsbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#GK5> .
+<https://w3id.org/wdio#Rothalsbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Insects> .
+<https://w3id.org/wdio#Rothalsbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Larch_Sapwood> .
+<https://w3id.org/wdio#Rothalsbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Longhorn_beetle> .
+<https://w3id.org/wdio#Rothalsbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Pine_Sapwood> .
+<https://w3id.org/wdio#Rothalsbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Smooth_outlet_holes> .
+<https://w3id.org/wdio#Rothalsbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Spruce_Sapwood> .
+<https://w3id.org/wdio#Rothalsbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#acyclic_action> .
+<https://w3id.org/wdio#Rothalsbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#load_bearing_structure_irrelevant> .
+<https://w3id.org/wdio#Rothalsbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#round> .
+<https://w3id.org/wdio#Rothalsbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#seldom> .
+<https://w3id.org/wdio#Rothalsbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid84 .
+_:genid84 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid91 .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid92 .
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid92 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_fly_hole_size> .
+_:genid92 <http://www.w3.org/2002/07/owl#hasValue> "4"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid89 .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid90 .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid90 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_fly_hole_size> .
+_:genid90 <http://www.w3.org/2002/07/owl#hasValue> "5"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid87 .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid88 .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid88 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_fly_hole_size> .
+_:genid88 <http://www.w3.org/2002/07/owl#hasValue> "6"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid85 .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid86 .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid86 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_fly_hole_size> .
+_:genid86 <http://www.w3.org/2002/07/owl#hasValue> "7"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#Rothalsbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid93 .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid93 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_bodycolor> .
+_:genid93 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/wdio#brown> .
+<https://w3id.org/wdio#Rothalsbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid94 .
+_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid94 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_bodycolor> .
+_:genid94 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/wdio#red> .
+<https://w3id.org/wdio#Rothalsbock> <http://www.w3.org/2000/01/rdf-schema#label> "Rothalsbock"@de .
+<https://w3id.org/wdio#Rothalsbock> <http://www.w3.org/2000/01/rdf-schema#label> "Leptura rubra"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<https://w3id.org/wdio#Rothalsbock> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.wikidata.org/wiki/Q1928502"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# https://w3id.org/wdio#Schusterbock
+<https://w3id.org/wdio#Schusterbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/wdio#Schusterbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Douglas_fir_Sapwood> .
+<https://w3id.org/wdio#Schusterbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Fir_Sapwood> .
+<https://w3id.org/wdio#Schusterbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Freshwood_insects> .
+<https://w3id.org/wdio#Schusterbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Fringed_outlet_holes> .
+<https://w3id.org/wdio#Schusterbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#GK4> .
+<https://w3id.org/wdio#Schusterbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#GK5> .
+<https://w3id.org/wdio#Schusterbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Insects> .
+<https://w3id.org/wdio#Schusterbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Larch_Sapwood> .
+<https://w3id.org/wdio#Schusterbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Longhorn_beetle> .
+<https://w3id.org/wdio#Schusterbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Pine_Sapwood> .
+<https://w3id.org/wdio#Schusterbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Smooth_outlet_holes> .
+<https://w3id.org/wdio#Schusterbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Spruce_Sapwood> .
+<https://w3id.org/wdio#Schusterbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#acyclic_action> .
+<https://w3id.org/wdio#Schusterbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#load_bearing_structure_irrelevant> .
+<https://w3id.org/wdio#Schusterbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#round> .
+<https://w3id.org/wdio#Schusterbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#seldom> .
+<https://w3id.org/wdio#Schusterbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid95 .
+_:genid95 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid108 .
+_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid109 .
+_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid109 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_fly_hole_size> .
+_:genid109 <http://www.w3.org/2002/07/owl#hasValue> "10"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid106 .
+_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid107 .
+_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid107 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_fly_hole_size> .
+_:genid107 <http://www.w3.org/2002/07/owl#hasValue> "4"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid104 .
+_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid105 .
+_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid105 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_fly_hole_size> .
+_:genid105 <http://www.w3.org/2002/07/owl#hasValue> "5"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid102 .
+_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid103 .
+_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid103 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_fly_hole_size> .
+_:genid103 <http://www.w3.org/2002/07/owl#hasValue> "6"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid100 .
+_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid101 .
+_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid101 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_fly_hole_size> .
+_:genid101 <http://www.w3.org/2002/07/owl#hasValue> "7"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid98 .
+_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid99 .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid99 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_fly_hole_size> .
+_:genid99 <http://www.w3.org/2002/07/owl#hasValue> "8"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid96 .
+_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid97 .
+_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid97 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_fly_hole_size> .
+_:genid97 <http://www.w3.org/2002/07/owl#hasValue> "9"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#Schusterbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid110 .
+_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid110 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_bodycolor> .
+_:genid110 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/wdio#black> .
+<https://w3id.org/wdio#Schusterbock> <http://www.w3.org/2000/01/rdf-schema#label> "Schusterbock"@de .
+<https://w3id.org/wdio#Schusterbock> <http://www.w3.org/2000/01/rdf-schema#label> "monochamus sartor"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<https://w3id.org/wdio#Schusterbock> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.wikidata.org/wiki/Q1093724"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# https://w3id.org/wdio#Schwammholz-Nagekäfer
+<https://w3id.org/wdio#Schwammholz-Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/wdio#Schwammholz-Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Douglas_fir_Heartwood> .
+<https://w3id.org/wdio#Schwammholz-Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Douglas_fir_Sapwood> .
+<https://w3id.org/wdio#Schwammholz-Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Fir_Heartwood> .
+<https://w3id.org/wdio#Schwammholz-Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Fir_Sapwood> .
+<https://w3id.org/wdio#Schwammholz-Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#GK4> .
+<https://w3id.org/wdio#Schwammholz-Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#GK5> .
+<https://w3id.org/wdio#Schwammholz-Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Insects> .
+<https://w3id.org/wdio#Schwammholz-Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Larch_Heartwood> .
+<https://w3id.org/wdio#Schwammholz-Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Larch_Sapwood> .
+<https://w3id.org/wdio#Schwammholz-Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Pine_Heartwood> .
+<https://w3id.org/wdio#Schwammholz-Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Pine_Sapwood> .
+<https://w3id.org/wdio#Schwammholz-Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Rottenwood_Insects> .
+<https://w3id.org/wdio#Schwammholz-Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Spruce_Sapwood> .
+<https://w3id.org/wdio#Schwammholz-Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#acyclic_action> .
+<https://w3id.org/wdio#Schwammholz-Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#fine_and_dusty> .
+<https://w3id.org/wdio#Schwammholz-Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#load_bearing_structure_irrelevant> .
+<https://w3id.org/wdio#Schwammholz-Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#round> .
+<https://w3id.org/wdio#Schwammholz-Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#seldom> .
+<https://w3id.org/wdio#Schwammholz-Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid111 .
+_:genid111 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid114 .
+_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid115 .
+_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid115 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_fly_hole_size> .
+_:genid115 <http://www.w3.org/2002/07/owl#hasValue> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid112 .
+_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid113 .
+_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid113 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_fly_hole_size> .
+_:genid113 <http://www.w3.org/2002/07/owl#hasValue> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#Schwammholz-Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid116 .
+_:genid116 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid116 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_bodycolor> .
+_:genid116 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/wdio#brown> .
+<https://w3id.org/wdio#Schwammholz-Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid117 .
+_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid117 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_bodycolor> .
+_:genid117 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/wdio#red> .
+<https://w3id.org/wdio#Schwammholz-Nagek\u00E4fer> <http://www.w3.org/2000/01/rdf-schema#label> "Schwammholz-Nagekäfer"@de .
+<https://w3id.org/wdio#Schwammholz-Nagek\u00E4fer> <http://www.w3.org/2000/01/rdf-schema#label> "priobium carpini"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<https://w3id.org/wdio#Schwammholz-Nagek\u00E4fer> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.wikidata.org/wiki/Q2916527"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# https://w3id.org/wdio#Trotzkopf
+<https://w3id.org/wdio#Trotzkopf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/wdio#Trotzkopf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Douglas_fir_Heartwood> .
+<https://w3id.org/wdio#Trotzkopf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Douglas_fir_Sapwood> .
+<https://w3id.org/wdio#Trotzkopf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Fir_Heartwood> .
+<https://w3id.org/wdio#Trotzkopf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Fir_Sapwood> .
+<https://w3id.org/wdio#Trotzkopf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#GK4> .
+<https://w3id.org/wdio#Trotzkopf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#GK5> .
+<https://w3id.org/wdio#Trotzkopf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Insectclasses> .
+<https://w3id.org/wdio#Trotzkopf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Insects> .
+<https://w3id.org/wdio#Trotzkopf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Larch_Heartwood> .
+<https://w3id.org/wdio#Trotzkopf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Larch_Sapwood> .
+<https://w3id.org/wdio#Trotzkopf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Pine_Heartwood> .
+<https://w3id.org/wdio#Trotzkopf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Pine_Sapwood> .
+<https://w3id.org/wdio#Trotzkopf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Rottenwood_Insects> .
+<https://w3id.org/wdio#Trotzkopf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Spruce_Heartwood> .
+<https://w3id.org/wdio#Trotzkopf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Spruce_Sapwood> .
+<https://w3id.org/wdio#Trotzkopf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#acyclic_action> .
+<https://w3id.org/wdio#Trotzkopf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#fine_and_dusty> .
+<https://w3id.org/wdio#Trotzkopf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#load_bearing_structure_relevant> .
+<https://w3id.org/wdio#Trotzkopf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#often> .
+<https://w3id.org/wdio#Trotzkopf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#round> .
+<https://w3id.org/wdio#Trotzkopf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid118 .
+_:genid118 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid121 .
+_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid122 .
+_:genid122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid122 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_fly_hole_size> .
+_:genid122 <http://www.w3.org/2002/07/owl#hasValue> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid119 .
+_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid120 .
+_:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid120 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_fly_hole_size> .
+_:genid120 <http://www.w3.org/2002/07/owl#hasValue> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#Trotzkopf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid123 .
+_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid123 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_bodycolor> .
+_:genid123 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/wdio#black> .
+<https://w3id.org/wdio#Trotzkopf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid124 .
+_:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid124 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_bodycolor> .
+_:genid124 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/wdio#brown> .
+<https://w3id.org/wdio#Trotzkopf> <http://www.w3.org/2000/01/rdf-schema#label> "Trotzkopf"@de .
+<https://w3id.org/wdio#Trotzkopf> <http://www.w3.org/2000/01/rdf-schema#label> "hadrobregmus pertinax"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<https://w3id.org/wdio#Trotzkopf> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.wikidata.org/wiki/Q1788955"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# https://w3id.org/wdio#brauner_Splintholzkäfer
+<https://w3id.org/wdio#brauner_Splintholzk\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/wdio#brauner_Splintholzk\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Alder_Sapwood> .
+<https://w3id.org/wdio#brauner_Splintholzk\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Ash_Sapwood> .
+<https://w3id.org/wdio#brauner_Splintholzk\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Beech_Sapwood> .
+<https://w3id.org/wdio#brauner_Splintholzk\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Chestnut_Sapwood> .
+<https://w3id.org/wdio#brauner_Splintholzk\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Drywood_insects> .
+<https://w3id.org/wdio#brauner_Splintholzk\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#GK0> .
+<https://w3id.org/wdio#brauner_Splintholzk\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#GK1> .
+<https://w3id.org/wdio#brauner_Splintholzk\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#GK2> .
+<https://w3id.org/wdio#brauner_Splintholzk\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#GK3a> .
+<https://w3id.org/wdio#brauner_Splintholzk\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#GK3b> .
+<https://w3id.org/wdio#brauner_Splintholzk\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#GK4> .
+<https://w3id.org/wdio#brauner_Splintholzk\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#GK5> .
+<https://w3id.org/wdio#brauner_Splintholzk\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Insectclasses> .
+<https://w3id.org/wdio#brauner_Splintholzk\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Insects> .
+<https://w3id.org/wdio#brauner_Splintholzk\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Oak_Sapwood> .
+<https://w3id.org/wdio#brauner_Splintholzk\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Redbeech_Sapwood> .
+<https://w3id.org/wdio#brauner_Splintholzk\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Sapwood_beetle> .
+<https://w3id.org/wdio#brauner_Splintholzk\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Smooth_outlet_holes> .
+<https://w3id.org/wdio#brauner_Splintholzk\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#acyclic_action> .
+<https://w3id.org/wdio#brauner_Splintholzk\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#fine_and_dusty> .
+<https://w3id.org/wdio#brauner_Splintholzk\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#load_bearing_structure_irrelevant> .
+<https://w3id.org/wdio#brauner_Splintholzk\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#often> .
+<https://w3id.org/wdio#brauner_Splintholzk\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#round> .
+<https://w3id.org/wdio#brauner_Splintholzk\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid125 .
+_:genid125 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid128 .
+_:genid128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid129 .
+_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid129 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_fly_hole_size> .
+_:genid129 <http://www.w3.org/2002/07/owl#hasValue> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid126 .
+_:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid127 .
+_:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid127 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_fly_hole_size> .
+_:genid127 <http://www.w3.org/2002/07/owl#hasValue> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#brauner_Splintholzk\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid130 .
+_:genid130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid130 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_bodycolor> .
+_:genid130 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/wdio#brown> .
+<https://w3id.org/wdio#brauner_Splintholzk\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid131 .
+_:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid131 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_bodycolor> .
+_:genid131 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/wdio#red> .
+<https://w3id.org/wdio#brauner_Splintholzk\u00E4fer> <http://www.w3.org/2000/01/rdf-schema#label> "Brauner Splintholzkäfer"@de .
+<https://w3id.org/wdio#brauner_Splintholzk\u00E4fer> <http://www.w3.org/2000/01/rdf-schema#label> "lyctus brunneus"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<https://w3id.org/wdio#brauner_Splintholzk\u00E4fer> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.wikidata.org/wiki/Q639794"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# https://w3id.org/wdio#gekämmter_Nagekäfer
+<https://w3id.org/wdio#gek\u00E4mmter_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/wdio#gek\u00E4mmter_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Alder_Heartwood> .
+<https://w3id.org/wdio#gek\u00E4mmter_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Alder_Sapwood> .
+<https://w3id.org/wdio#gek\u00E4mmter_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Ash_Heartwood> .
+<https://w3id.org/wdio#gek\u00E4mmter_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Ash_Sapwood> .
+<https://w3id.org/wdio#gek\u00E4mmter_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Beech_Heartwood> .
+<https://w3id.org/wdio#gek\u00E4mmter_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Beech_Sapwood> .
+<https://w3id.org/wdio#gek\u00E4mmter_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Chestnut_Heartwood> .
+<https://w3id.org/wdio#gek\u00E4mmter_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Chestnut_Sapwood> .
+<https://w3id.org/wdio#gek\u00E4mmter_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Drywood_insects> .
+<https://w3id.org/wdio#gek\u00E4mmter_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#GK1> .
+<https://w3id.org/wdio#gek\u00E4mmter_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#GK2> .
+<https://w3id.org/wdio#gek\u00E4mmter_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#GK3a> .
+<https://w3id.org/wdio#gek\u00E4mmter_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#GK3b> .
+<https://w3id.org/wdio#gek\u00E4mmter_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#GK4> .
+<https://w3id.org/wdio#gek\u00E4mmter_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#GK5> .
+<https://w3id.org/wdio#gek\u00E4mmter_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Hardwood_Sapwood> .
+<https://w3id.org/wdio#gek\u00E4mmter_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Insects> .
+<https://w3id.org/wdio#gek\u00E4mmter_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Oak_Heartwood> .
+<https://w3id.org/wdio#gek\u00E4mmter_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Oak_Sapwood> .
+<https://w3id.org/wdio#gek\u00E4mmter_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Redbeech_Heartwood> .
+<https://w3id.org/wdio#gek\u00E4mmter_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Redbeech_Sapwood> .
+<https://w3id.org/wdio#gek\u00E4mmter_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Smooth_outlet_holes> .
+<https://w3id.org/wdio#gek\u00E4mmter_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#acyclic_action> .
+<https://w3id.org/wdio#gek\u00E4mmter_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#load_bearing_structure_irrelevant> .
+<https://w3id.org/wdio#gek\u00E4mmter_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#round> .
+<https://w3id.org/wdio#gek\u00E4mmter_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#seldom> .
+<https://w3id.org/wdio#gek\u00E4mmter_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#woodboring_beetle> .
+<https://w3id.org/wdio#gek\u00E4mmter_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid132 .
+_:genid132 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid135 .
+_:genid135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid136 .
+_:genid136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid136 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_fly_hole_size> .
+_:genid136 <http://www.w3.org/2002/07/owl#hasValue> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid133 .
+_:genid133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid134 .
+_:genid134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid134 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_fly_hole_size> .
+_:genid134 <http://www.w3.org/2002/07/owl#hasValue> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#gek\u00E4mmter_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid137 .
+_:genid137 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid137 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_bodycolor> .
+_:genid137 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/wdio#black> .
+<https://w3id.org/wdio#gek\u00E4mmter_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid138 .
+_:genid138 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid138 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_bodycolor> .
+_:genid138 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/wdio#brown> .
+<https://w3id.org/wdio#gek\u00E4mmter_Nagek\u00E4fer> <http://www.w3.org/2000/01/rdf-schema#label> "Gekämmter Nagekäfer"@de .
+<https://w3id.org/wdio#gek\u00E4mmter_Nagek\u00E4fer> <http://www.w3.org/2000/01/rdf-schema#label> "ptilinus pectinicornis"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<https://w3id.org/wdio#gek\u00E4mmter_Nagek\u00E4fer> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.wikidata.org/wiki/Q2314103"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# https://w3id.org/wdio#gewöhnlicher_Nagekäfer
+<https://w3id.org/wdio#gew\u00F6hnlicher_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/wdio#gew\u00F6hnlicher_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Alder_Heartwood> .
+<https://w3id.org/wdio#gew\u00F6hnlicher_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Alder_Sapwood> .
+<https://w3id.org/wdio#gew\u00F6hnlicher_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Ash_Heartwood> .
+<https://w3id.org/wdio#gew\u00F6hnlicher_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Ash_Sapwood> .
+<https://w3id.org/wdio#gew\u00F6hnlicher_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Beech_Heartwood> .
+<https://w3id.org/wdio#gew\u00F6hnlicher_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Beech_Sapwood> .
+<https://w3id.org/wdio#gew\u00F6hnlicher_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Chestnut_Heartwood> .
+<https://w3id.org/wdio#gew\u00F6hnlicher_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Chestnut_Sapwood> .
+<https://w3id.org/wdio#gew\u00F6hnlicher_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Douglas_fir_Heartwood> .
+<https://w3id.org/wdio#gew\u00F6hnlicher_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Douglas_fir_Sapwood> .
+<https://w3id.org/wdio#gew\u00F6hnlicher_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Drywood_insects> .
+<https://w3id.org/wdio#gew\u00F6hnlicher_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Fir_Heartwood> .
+<https://w3id.org/wdio#gew\u00F6hnlicher_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Fir_Sapwood> .
+<https://w3id.org/wdio#gew\u00F6hnlicher_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#GK1> .
+<https://w3id.org/wdio#gew\u00F6hnlicher_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#GK2> .
+<https://w3id.org/wdio#gew\u00F6hnlicher_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#GK3a> .
+<https://w3id.org/wdio#gew\u00F6hnlicher_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#GK3b> .
+<https://w3id.org/wdio#gew\u00F6hnlicher_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#GK4> .
+<https://w3id.org/wdio#gew\u00F6hnlicher_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#GK5> .
+<https://w3id.org/wdio#gew\u00F6hnlicher_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Insectclasses> .
+<https://w3id.org/wdio#gew\u00F6hnlicher_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Insects> .
+<https://w3id.org/wdio#gew\u00F6hnlicher_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Larch_Sapwood> .
+<https://w3id.org/wdio#gew\u00F6hnlicher_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Oak_Sapwood> .
+<https://w3id.org/wdio#gew\u00F6hnlicher_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Pine_Heartwood> .
+<https://w3id.org/wdio#gew\u00F6hnlicher_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Pine_Sapwood> .
+<https://w3id.org/wdio#gew\u00F6hnlicher_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Redbeech_Heartwood> .
+<https://w3id.org/wdio#gew\u00F6hnlicher_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Redbeech_Sapwood> .
+<https://w3id.org/wdio#gew\u00F6hnlicher_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Smooth_outlet_holes> .
+<https://w3id.org/wdio#gew\u00F6hnlicher_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Spruce_Heartwood> .
+<https://w3id.org/wdio#gew\u00F6hnlicher_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Spruce_Sapwood> .
+<https://w3id.org/wdio#gew\u00F6hnlicher_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#cyclic_action> .
+<https://w3id.org/wdio#gew\u00F6hnlicher_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#fine_and_dusty> .
+<https://w3id.org/wdio#gew\u00F6hnlicher_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#load_bearing_structure_relevant> .
+<https://w3id.org/wdio#gew\u00F6hnlicher_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#often> .
+<https://w3id.org/wdio#gew\u00F6hnlicher_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#round> .
+<https://w3id.org/wdio#gew\u00F6hnlicher_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#woodboring_beetle> .
+<https://w3id.org/wdio#gew\u00F6hnlicher_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid139 .
+_:genid139 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid142 .
+_:genid142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid143 .
+_:genid143 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid143 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_fly_hole_size> .
+_:genid143 <http://www.w3.org/2002/07/owl#hasValue> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid140 .
+_:genid140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid141 .
+_:genid141 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid141 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_fly_hole_size> .
+_:genid141 <http://www.w3.org/2002/07/owl#hasValue> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid139 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#gew\u00F6hnlicher_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid144 .
+_:genid144 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid144 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_bodycolor> .
+_:genid144 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/wdio#black> .
+<https://w3id.org/wdio#gew\u00F6hnlicher_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid145 .
+_:genid145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid145 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_bodycolor> .
+_:genid145 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/wdio#brown> .
+<https://w3id.org/wdio#gew\u00F6hnlicher_Nagek\u00E4fer> <http://www.w3.org/2000/01/rdf-schema#label> "Gewöhnlicher Nagekäfer"@de .
+<https://w3id.org/wdio#gew\u00F6hnlicher_Nagek\u00E4fer> <http://www.w3.org/2000/01/rdf-schema#label> "anobium punctatum"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<https://w3id.org/wdio#gew\u00F6hnlicher_Nagek\u00E4fer> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.wikidata.org/wiki/Q27925"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# https://w3id.org/wdio#linierter_Splintholzkäfer
+<https://w3id.org/wdio#linierter_Splintholzk\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/wdio#linierter_Splintholzk\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Drywood_insects> .
+<https://w3id.org/wdio#linierter_Splintholzk\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#GK0> .
+<https://w3id.org/wdio#linierter_Splintholzk\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#GK1> .
+<https://w3id.org/wdio#linierter_Splintholzk\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#GK2> .
+<https://w3id.org/wdio#linierter_Splintholzk\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#GK3a> .
+<https://w3id.org/wdio#linierter_Splintholzk\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#GK3b> .
+<https://w3id.org/wdio#linierter_Splintholzk\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#GK4> .
+<https://w3id.org/wdio#linierter_Splintholzk\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#GK5> .
+<https://w3id.org/wdio#linierter_Splintholzk\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Insectclasses> .
+<https://w3id.org/wdio#linierter_Splintholzk\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Insects> .
+<https://w3id.org/wdio#linierter_Splintholzk\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Oak_Heartwood> .
+<https://w3id.org/wdio#linierter_Splintholzk\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Oak_Sapwood> .
+<https://w3id.org/wdio#linierter_Splintholzk\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Sapwood_beetle> .
+<https://w3id.org/wdio#linierter_Splintholzk\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Smooth_outlet_holes> .
+<https://w3id.org/wdio#linierter_Splintholzk\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#acyclic_action> .
+<https://w3id.org/wdio#linierter_Splintholzk\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#fine_and_dusty> .
+<https://w3id.org/wdio#linierter_Splintholzk\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#load_bearing_structure_irrelevant> .
+<https://w3id.org/wdio#linierter_Splintholzk\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#often> .
+<https://w3id.org/wdio#linierter_Splintholzk\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#round> .
+<https://w3id.org/wdio#linierter_Splintholzk\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid146 .
+_:genid146 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid146 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_bodycolor> .
+_:genid146 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/wdio#black> .
+<https://w3id.org/wdio#linierter_Splintholzk\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid147 .
+_:genid147 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid147 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_bodycolor> .
+_:genid147 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/wdio#brown> .
+<https://w3id.org/wdio#linierter_Splintholzk\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid148 .
+_:genid148 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid148 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_fly_hole_size> .
+_:genid148 <http://www.w3.org/2002/07/owl#hasValue> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/wdio#linierter_Splintholzk\u00E4fer> <http://www.w3.org/2000/01/rdf-schema#label> "Linierter Splintholzkäfer"@de .
+<https://w3id.org/wdio#linierter_Splintholzk\u00E4fer> <http://www.w3.org/2000/01/rdf-schema#label> "lyctus linearis"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<https://w3id.org/wdio#linierter_Splintholzk\u00E4fer> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.wikidata.org/wiki/Q637273"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# https://w3id.org/wdio#veränderlicher_Scheibenbock
+<https://w3id.org/wdio#ver\u00E4nderlicher_Scheibenbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/wdio#ver\u00E4nderlicher_Scheibenbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Beech_Sapwood> .
+<https://w3id.org/wdio#ver\u00E4nderlicher_Scheibenbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Douglas_fir_Sapwood> .
+<https://w3id.org/wdio#ver\u00E4nderlicher_Scheibenbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Fir_Sapwood> .
+<https://w3id.org/wdio#ver\u00E4nderlicher_Scheibenbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Freshwood_insects> .
+<https://w3id.org/wdio#ver\u00E4nderlicher_Scheibenbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#GK4> .
+<https://w3id.org/wdio#ver\u00E4nderlicher_Scheibenbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#GK5> .
+<https://w3id.org/wdio#ver\u00E4nderlicher_Scheibenbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Insectclasses> .
+<https://w3id.org/wdio#ver\u00E4nderlicher_Scheibenbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Insects> .
+<https://w3id.org/wdio#ver\u00E4nderlicher_Scheibenbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Larch_Sapwood> .
+<https://w3id.org/wdio#ver\u00E4nderlicher_Scheibenbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Longhorn_beetle> .
+<https://w3id.org/wdio#ver\u00E4nderlicher_Scheibenbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Oak_Sapwood> .
+<https://w3id.org/wdio#ver\u00E4nderlicher_Scheibenbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Pine_Sapwood> .
+<https://w3id.org/wdio#ver\u00E4nderlicher_Scheibenbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Smooth_outlet_holes> .
+<https://w3id.org/wdio#ver\u00E4nderlicher_Scheibenbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Spruce_Sapwood> .
+<https://w3id.org/wdio#ver\u00E4nderlicher_Scheibenbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#acyclic_action> .
+<https://w3id.org/wdio#ver\u00E4nderlicher_Scheibenbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#load_bearing_structure_irrelevant> .
+<https://w3id.org/wdio#ver\u00E4nderlicher_Scheibenbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#often> .
+<https://w3id.org/wdio#ver\u00E4nderlicher_Scheibenbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#oval> .
+<https://w3id.org/wdio#ver\u00E4nderlicher_Scheibenbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid149 .
+_:genid149 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid154 .
+_:genid154 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid154 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid155 .
+_:genid155 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid155 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_fly_hole_size> .
+_:genid155 <http://www.w3.org/2002/07/owl#hasValue> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid154 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid152 .
+_:genid152 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid152 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid153 .
+_:genid153 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid153 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_fly_hole_size> .
+_:genid153 <http://www.w3.org/2002/07/owl#hasValue> "4"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid152 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid150 .
+_:genid150 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid150 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid151 .
+_:genid151 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid151 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_fly_hole_size> .
+_:genid151 <http://www.w3.org/2002/07/owl#hasValue> "5"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid150 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid149 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/wdio#ver\u00E4nderlicher_Scheibenbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid156 .
+_:genid156 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid156 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_bodycolor> .
+_:genid156 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/wdio#black> .
+<https://w3id.org/wdio#ver\u00E4nderlicher_Scheibenbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid157 .
+_:genid157 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid157 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_bodycolor> .
+_:genid157 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/wdio#brown> .
+<https://w3id.org/wdio#ver\u00E4nderlicher_Scheibenbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid158 .
+_:genid158 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid158 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_bodycolor> .
+_:genid158 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/wdio#red> .
+<https://w3id.org/wdio#ver\u00E4nderlicher_Scheibenbock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid159 .
+_:genid159 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid159 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_bodycolor> .
+_:genid159 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/wdio#yellow> .
+<https://w3id.org/wdio#ver\u00E4nderlicher_Scheibenbock> <http://www.w3.org/2000/01/rdf-schema#label> "Veränderlicher Scheibenbock"@de .
+<https://w3id.org/wdio#ver\u00E4nderlicher_Scheibenbock> <http://www.w3.org/2000/01/rdf-schema#label> "phymatodes testaceus"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<https://w3id.org/wdio#ver\u00E4nderlicher_Scheibenbock> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.wikidata.org/wiki/Q1315415"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# https://w3id.org/wdio#weicher_Nagekäfer
+<https://w3id.org/wdio#weicher_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/wdio#weicher_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Drywood_insects> .
+<https://w3id.org/wdio#weicher_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Fir_Sapwood> .
+<https://w3id.org/wdio#weicher_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#GK1> .
+<https://w3id.org/wdio#weicher_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#GK2> .
+<https://w3id.org/wdio#weicher_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#GK3a> .
+<https://w3id.org/wdio#weicher_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#GK3b> .
+<https://w3id.org/wdio#weicher_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#GK4> .
+<https://w3id.org/wdio#weicher_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#GK5> .
+<https://w3id.org/wdio#weicher_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Insects> .
+<https://w3id.org/wdio#weicher_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Larch_Sapwood> .
+<https://w3id.org/wdio#weicher_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Pine_Sapwood> .
+<https://w3id.org/wdio#weicher_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Smooth_outlet_holes> .
+<https://w3id.org/wdio#weicher_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Spruce_Sapwood> .
+<https://w3id.org/wdio#weicher_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#acyclic_action> .
+<https://w3id.org/wdio#weicher_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#load_bearing_structure_irrelevant> .
+<https://w3id.org/wdio#weicher_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#round> .
+<https://w3id.org/wdio#weicher_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#seldom> .
+<https://w3id.org/wdio#weicher_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid160 .
+_:genid160 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid160 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_bodycolor> .
+_:genid160 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/wdio#brown> .
+<https://w3id.org/wdio#weicher_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid161 .
+_:genid161 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid161 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_fly_hole_size> .
+_:genid161 <http://www.w3.org/2002/07/owl#hasValue> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/wdio#weicher_Nagek\u00E4fer> <http://www.w3.org/2000/01/rdf-schema#label> "Weicher Nagekäfer"@de .
+<https://w3id.org/wdio#weicher_Nagek\u00E4fer> <http://www.w3.org/2000/01/rdf-schema#label> "ernobius mollis"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<https://w3id.org/wdio#weicher_Nagek\u00E4fer> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.wikidata.org/wiki/Q602516"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# https://w3id.org/wdio#%23gescheckter/bunter_Nagekäfer
+<https://w3id.org/wdio#%23gescheckter/bunter_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/wdio#%23gescheckter/bunter_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Douglas_fir_Heartwood> .
+<https://w3id.org/wdio#%23gescheckter/bunter_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Douglas_fir_Sapwood> .
+<https://w3id.org/wdio#%23gescheckter/bunter_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Fir_Heartwood> .
+<https://w3id.org/wdio#%23gescheckter/bunter_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Fir_Sapwood> .
+<https://w3id.org/wdio#%23gescheckter/bunter_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#GK4> .
+<https://w3id.org/wdio#%23gescheckter/bunter_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#GK5> .
+<https://w3id.org/wdio#%23gescheckter/bunter_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Insectclasses> .
+<https://w3id.org/wdio#%23gescheckter/bunter_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Insects> .
+<https://w3id.org/wdio#%23gescheckter/bunter_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Larch_Heartwood> .
+<https://w3id.org/wdio#%23gescheckter/bunter_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Larch_Sapwood> .
+<https://w3id.org/wdio#%23gescheckter/bunter_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Make_hearable_nagging_noise> .
+<https://w3id.org/wdio#%23gescheckter/bunter_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Oak_Heartwood> .
+<https://w3id.org/wdio#%23gescheckter/bunter_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Oak_Sapwood> .
+<https://w3id.org/wdio#%23gescheckter/bunter_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Pine_Heartwood> .
+<https://w3id.org/wdio#%23gescheckter/bunter_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Pine_Sapwood> .
+<https://w3id.org/wdio#%23gescheckter/bunter_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Roll-shaped> .
+<https://w3id.org/wdio#%23gescheckter/bunter_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Rottenwood_Insects> .
+<https://w3id.org/wdio#%23gescheckter/bunter_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Spruce_Heartwood> .
+<https://w3id.org/wdio#%23gescheckter/bunter_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#Spruce_Sapwood> .
+<https://w3id.org/wdio#%23gescheckter/bunter_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#acyclic_action> .
+<https://w3id.org/wdio#%23gescheckter/bunter_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#fine_and_dusty> .
+<https://w3id.org/wdio#%23gescheckter/bunter_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#load_bearing_structure_irrelevant> .
+<https://w3id.org/wdio#%23gescheckter/bunter_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#often> .
+<https://w3id.org/wdio#%23gescheckter/bunter_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#round> .
+<https://w3id.org/wdio#%23gescheckter/bunter_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/wdio#woodboring_beetle> .
+<https://w3id.org/wdio#%23gescheckter/bunter_Nagek\u00E4fer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid162 .
+_:genid162 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid162 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wdio#has_bodycolor> .
+_:genid162 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/wdio#brown> .
+<https://w3id.org/wdio#%23gescheckter/bunter_Nagek\u00E4fer> <http://www.w3.org/2000/01/rdf-schema#label> "Gescheckter/Bunter Nagekäfer"@de .
+<https://w3id.org/wdio#%23gescheckter/bunter_Nagek\u00E4fer> <http://www.w3.org/2000/01/rdf-schema#label> "Xestobium rufovillosum"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<https://w3id.org/wdio#%23gescheckter/bunter_Nagek\u00E4fer> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.wikidata.org/wiki/Q1074662"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid163 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDifferent> .
+_:genid163 <http://www.w3.org/2002/07/owl#distinctMembers> _:genid179 .
+_:genid179 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid179 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/wdio#Blauer_Scheibenbock> .
+_:genid179 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid178 .
+_:genid178 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid178 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/wdio#Grubenhalsbock> .
+_:genid178 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid177 .
+_:genid177 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid177 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/wdio#Hausbock> .
+_:genid177 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid176 .
+_:genid176 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid176 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/wdio#Holzwespen> .
+_:genid176 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid175 .
+_:genid175 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid175 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/wdio#Kapuzinerk\u00E4fer> .
+_:genid175 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid174 .
+_:genid174 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid174 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/wdio#Rothalsbock> .
+_:genid174 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid173 .
+_:genid173 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid173 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/wdio#Schusterbock> .
+_:genid173 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid172 .
+_:genid172 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid172 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/wdio#Schwammholz-Nagek\u00E4fer> .
+_:genid172 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid171 .
+_:genid171 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid171 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/wdio#Trotzkopf> .
+_:genid171 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid170 .
+_:genid170 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid170 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/wdio#brauner_Splintholzk\u00E4fer> .
+_:genid170 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid169 .
+_:genid169 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid169 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/wdio#gek\u00E4mmter_Nagek\u00E4fer> .
+_:genid169 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid168 .
+_:genid168 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid168 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/wdio#gew\u00F6hnlicher_Nagek\u00E4fer> .
+_:genid168 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid167 .
+_:genid167 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid167 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/wdio#linierter_Splintholzk\u00E4fer> .
+_:genid167 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid166 .
+_:genid166 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid166 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/wdio#ver\u00E4nderlicher_Scheibenbock> .
+_:genid166 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid165 .
+_:genid165 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid165 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/wdio#weicher_Nagek\u00E4fer> .
+_:genid165 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid164 .
+_:genid164 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid164 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/wdio#%23gescheckter/bunter_Nagek\u00E4fer> .
+_:genid164 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid180 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDifferent> .
+_:genid180 <http://www.w3.org/2002/07/owl#distinctMembers> _:genid182 .
+_:genid182 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid182 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/wdio#Holzwespen> .
+_:genid182 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid181 .
+_:genid181 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid181 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/wdio#brauner_Splintholzk\u00E4fer> .
+_:genid181 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

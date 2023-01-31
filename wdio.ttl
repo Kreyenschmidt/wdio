@@ -1,0 +1,1692 @@
+@prefix : <https://w3id.org/wdio#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/wdio#> .
+
+<https://w3id.org/wdio#> rdf:type owl:Ontology ;
+                          owl:versionIRI <https://w3id.org/wdio/0.8> ;
+                          <http://purl.org/dc/elements/1.1/title> "Wood destroying insects ontology (WDIO)"@en ,
+                                                                  "Ontologie holzzerstörender Insekten" ;
+                          <http://purl.org/dc/terms/creator> "Christian Kreyenschmidt, Jade University of applied science, Odenburg / Germany"@en ;
+                          <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/1.0"@en ;
+                          <http://purl.org/vocab/vann/preferredNamespacePrefix> "wdio" ;
+                          <http://schema.org/dateCreated> "2021-07-28" ;
+                          rdfs:comment "An essential part of maintenance in existing buildings is assessment and evaluation of structural condition by experts and specialists from different fields. Especially before renovation processes the assessment of an existing building is often significant for the further proceedings. Generating an assessment is characterized by heterogeneous influences and the detection, classification, evaluation and documentation of anomalies and damages include a high workload in the pre-project phase. On the one hand, costs and time for building assessment should be kept lean and on the other hand the findings must be reliable for the further planning of rehabilitation-/renovation processes. This paper is about the typical characteristics and classification of damaged timber structures in existing buildings. Therefore, this paper presents an approach of a domain ontology for the classification of wood pests. The implementation of a linked data ontology will assist the assessment engineer and transform his results to a more transparent structure. The long-term goal is to relieve and support the assessment engineer on the site and improve repetitive processes in assessment tasks."@en ;
+                          owl:versionInfo 0.8 .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://creativecommons.org/ns#Licence
+<http://creativecommons.org/ns#Licence> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/rights
+<http://purl.org/dc/elements/1.1/rights> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/dateCreated
+<http://schema.org/dateCreated> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/license
+<http://schema.org/license> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/wdio#action_needed
+:action_needed rdf:type owl:ObjectProperty ;
+               rdfs:domain owl:Thing ;
+               rdfs:range :cyclic_action ;
+               rdfs:comment "In the case of an infestation there is a need for action."@en ;
+               rdfs:label "action needed"@en .
+
+
+###  https://w3id.org/wdio#has_bodycolor
+:has_bodycolor rdf:type owl:ObjectProperty ;
+               rdfs:domain owl:Thing ;
+               rdfs:range :Colors ;
+               rdfs:comment "Describes the bodycolor."@en ;
+               rdfs:label "has bodycolor"@en .
+
+
+###  https://w3id.org/wdio#has_fecescolor
+:has_fecescolor rdf:type owl:ObjectProperty ;
+                rdfs:domain owl:Thing ;
+                rdfs:range :Colors ;
+                rdfs:comment "Describes the fecescolor."@en ;
+                rdfs:label "has fecescolor"@en .
+
+
+###  https://w3id.org/wdio#has_fecesform
+:has_fecesform rdf:type owl:ObjectProperty ;
+               rdfs:domain owl:Thing ;
+               rdfs:range :feces ;
+               rdfs:comment "Describes the fecesform."@en ;
+               rdfs:label "has fecesform"@en .
+
+
+###  https://w3id.org/wdio#has_flyholeform
+:has_flyholeform rdf:type owl:ObjectProperty ;
+                 rdfs:domain owl:Thing ;
+                 rdfs:range :Flyholeform ;
+                 rdfs:comment "Describes the flyholeform."@en ;
+                 rdfs:label "has flyholeform"@en .
+
+
+###  https://w3id.org/wdio#has_larvacolor
+:has_larvacolor rdf:type owl:ObjectProperty ;
+                rdfs:domain owl:Thing ;
+                rdfs:range :Colors ;
+                rdfs:comment "Describes the larvacolor."@en ;
+                rdfs:label "has larvacolor"@en .
+
+
+###  https://w3id.org/wdio#has_special_feature
+:has_special_feature rdf:type owl:ObjectProperty ;
+                     rdfs:domain owl:Thing ;
+                     rdfs:range :Special_Features ;
+                     rdfs:comment "Describes a special feature of the insect."@en ;
+                     rdfs:label "has special feature"@en .
+
+
+###  https://w3id.org/wdio#has_wingcolor
+:has_wingcolor rdf:type owl:ObjectProperty ;
+               rdfs:domain owl:Thing ;
+               rdfs:range :Colors ;
+               rdfs:comment "Describes the wingcolor."@en ;
+               rdfs:label "has wingcolor"@en .
+
+
+###  https://w3id.org/wdio#is_affecting
+:is_affecting rdf:type owl:ObjectProperty ;
+              rdfs:domain owl:Thing ;
+              rdfs:range :Wood ;
+              rdfs:comment "Describes the kind of wood that could get affected from the insect."@en ;
+              rdfs:label "is affecting"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/wdio#Bodylength_insect
+:Bodylength_insect rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf owl:topDataProperty ;
+                   rdfs:domain owl:Thing ;
+                   rdfs:range xsd:double ;
+                   rdfs:comment "Describes the bodylength of the insect."@en ;
+                   rdfs:label "Bodylength"@en .
+
+
+###  https://w3id.org/wdio#has_fly_hole_size
+:has_fly_hole_size rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf owl:topDataProperty ;
+                   rdfs:domain :Insects ;
+                   rdfs:range xsd:int ;
+                   rdfs:comment "Describes the flyholesize of the insect. In case it is oval, the value discribes the length of the hole."@en ;
+                   rdfs:label "flyholesize"@en .
+
+
+###  https://w3id.org/wdio#has_larvalength
+:has_larvalength rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf owl:topDataProperty ;
+                 rdfs:domain owl:Thing ;
+                 rdfs:range xsd:double ;
+                 rdfs:comment "Describes the bodylength of the larva."@en ;
+                 rdfs:label "Larvalength"@en .
+
+
+###  https://w3id.org/wdio#need_wood_humidity
+:need_wood_humidity rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf owl:topDataProperty ;
+                    rdfs:domain owl:Thing ;
+                    rdfs:range xsd:int ;
+                    rdfs:comment "Describes the minimum wood humidity that is needed for the insect activity."@en ;
+                    rdfs:label "need wood humidity"@en .
+
+
+###  https://w3id.org/wdio#stay_for_generations
+:stay_for_generations rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf owl:topDataProperty ;
+                      rdfs:domain owl:Thing ;
+                      rdfs:range xsd:int ;
+                      rdfs:comment "Describes the generation tim the insects stay in the wood. This value is only important for cyclic insects."@en ;
+                      rdfs:label "Stay for generations"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/wdio#Alder_Heartwood
+:Alder_Heartwood rdf:type owl:Class ;
+                 rdfs:subClassOf :Hardwood_Heartwood ;
+                 rdfs:comment "Erle_Kernholz (deutsch)" ;
+                 rdfs:label "Alder_Heartwood"@en ;
+                 rdfs:seeAlso "https://www.wikidata.org/wiki/Q1355553" .
+
+
+###  https://w3id.org/wdio#Alder_Sapwood
+:Alder_Sapwood rdf:type owl:Class ;
+               rdfs:subClassOf :Hardwood_Sapwood ;
+               rdfs:comment "Erle_Splintholz (deutsch)" ;
+               rdfs:label "Alder_Sapwood"@en ;
+               rdfs:seeAlso "https://www.wikidata.org/wiki/Q1355553" .
+
+
+###  https://w3id.org/wdio#Ash_Heartwood
+:Ash_Heartwood rdf:type owl:Class ;
+               rdfs:subClassOf :Hardwood_Heartwood ;
+               rdfs:comment "Esche_Kernholz (deutsch)" ;
+               rdfs:label "Ash_Heartwood"@en ;
+               rdfs:seeAlso "https://www.wikidata.org/wiki/Q1367022" .
+
+
+###  https://w3id.org/wdio#Ash_Sapwood
+:Ash_Sapwood rdf:type owl:Class ;
+             rdfs:subClassOf :Hardwood_Sapwood ;
+             rdfs:comment "Esche_Splintholz (deutsch)" ;
+             rdfs:label "Ash_Sapwood"@en ;
+             rdfs:seeAlso "https://www.wikidata.org/wiki/Q1367022" .
+
+
+###  https://w3id.org/wdio#Beech_Heartwood
+:Beech_Heartwood rdf:type owl:Class ;
+                 rdfs:subClassOf :Hardwood_Heartwood ;
+                 rdfs:comment "Buche_Kernholz (deutsch)" ;
+                 rdfs:label "Beech_Heartwood"@en ;
+                 rdfs:seeAlso "https://www.wikidata.org/wiki/Q998316" .
+
+
+###  https://w3id.org/wdio#Beech_Sapwood
+:Beech_Sapwood rdf:type owl:Class ;
+               rdfs:subClassOf :Hardwood_Sapwood ;
+               rdfs:comment "Buche_Kernholz (deutsch)" ;
+               rdfs:label "Beech_Sapwood"@en ;
+               rdfs:seeAlso "https://www.wikidata.org/wiki/Q998316" .
+
+
+###  https://w3id.org/wdio#Chemicals
+:Chemicals rdf:type owl:Class ;
+           rdfs:subClassOf :Treatment ;
+           rdfs:comment "Wood preservative with preventive effectiveness against individual beetle species or against all wood-destroying insects."@en ;
+           rdfs:label "Chemical"@en .
+
+
+###  https://w3id.org/wdio#Chestnut_Heartwood
+:Chestnut_Heartwood rdf:type owl:Class ;
+                    rdfs:subClassOf :Hardwood_Heartwood ;
+                    rdfs:comment "Kastanie_Kernholz (deutsch)" ;
+                    rdfs:label "Chestnut_Heartwood"@en ;
+                    rdfs:seeAlso "https://www.wikidata.org/wiki/Q28870512" .
+
+
+###  https://w3id.org/wdio#Chestnut_Sapwood
+:Chestnut_Sapwood rdf:type owl:Class ;
+                  rdfs:subClassOf :Hardwood_Sapwood ;
+                  rdfs:comment "Kastanie_Splintholz (deutsch)" ;
+                  rdfs:label "Chestnut_Sapwood"@en ;
+                  rdfs:seeAlso "https://www.wikidata.org/wiki/Q28870512" .
+
+
+###  https://w3id.org/wdio#Colors
+:Colors rdf:type owl:Class ;
+        rdfs:subClassOf :Damage_characteristics ;
+        rdfs:comment "Discribes the spectrum of the insect related colors."@en ;
+        rdfs:label "Colors"@en .
+
+
+###  https://w3id.org/wdio#Cylinder_form
+:Cylinder_form rdf:type owl:Class ;
+               rdfs:subClassOf :feces ;
+               rdfs:comment "Fecal particles are cylindrical and cut straight at the ends."@en ;
+               rdfs:label "cylindrical shaped"@en .
+
+
+###  https://w3id.org/wdio#Damage_characteristics
+:Damage_characteristics rdf:type owl:Class ;
+                        rdfs:subClassOf owl:Thing ;
+                        rdfs:comment "Characteristics and attributes of the damage location and the insects features."@en ;
+                        rdfs:label "Damage characteristics"@en .
+
+
+###  https://w3id.org/wdio#Douglas_fir_Heartwood
+:Douglas_fir_Heartwood rdf:type owl:Class ;
+                       rdfs:subClassOf :Softwood_Heartwood ;
+                       rdfs:comment "Douglasie_Kernholz (deutsch)" ;
+                       rdfs:label "Douglas Fir_Heartwood"@en ;
+                       rdfs:seeAlso "https://www.wikidata.org/wiki/Q13574159" .
+
+
+###  https://w3id.org/wdio#Douglas_fir_Sapwood
+:Douglas_fir_Sapwood rdf:type owl:Class ;
+                     rdfs:subClassOf :Softwood_Sapwood ;
+                     rdfs:comment "Douglasie_Splintholz (deutsch)" ;
+                     rdfs:label "Douglas Fir_Sapwood"@en ;
+                     rdfs:seeAlso "https://www.wikidata.org/wiki/Q13574159" .
+
+
+###  https://w3id.org/wdio#Drywood_insects
+:Drywood_insects rdf:type owl:Class ;
+                 rdfs:subClassOf :Insectclasses ;
+                 rdfs:comment "Affects dry and semi-dry wood."@en ;
+                 rdfs:label "Drywood insects"@en .
+
+
+###  https://w3id.org/wdio#Exchange
+:Exchange rdf:type owl:Class ;
+          rdfs:subClassOf :Treatment ;
+          rdfs:comment "Replacement and reinforcement of severely damaged and unsound wooden elements."@en ;
+          rdfs:label "Exchange"@en .
+
+
+###  https://w3id.org/wdio#Fir_Heartwood
+:Fir_Heartwood rdf:type owl:Class ;
+               rdfs:subClassOf :Softwood_Heartwood ;
+               rdfs:comment "Tanne_Kernholz (deutsch)" ;
+               rdfs:label "Fir_Heartwood"@en ;
+               rdfs:seeAlso "https://www.wikidata.org/wiki/Q25350" .
+
+
+###  https://w3id.org/wdio#Fir_Sapwood
+:Fir_Sapwood rdf:type owl:Class ;
+             rdfs:subClassOf :Softwood_Sapwood ;
+             rdfs:comment "Tanne_Splintholz (deutsch)" ;
+             rdfs:label "Fir_Sapwood"@en ;
+             rdfs:seeAlso "https://www.wikidata.org/wiki/Q25350" .
+
+
+###  https://w3id.org/wdio#Fly_holes
+:Fly_holes rdf:type owl:Class ;
+           rdfs:subClassOf :Damage_characteristics ;
+           rdfs:comment "Discribes the form and features of the flyholes."@en ;
+           rdfs:label "flyhole attributes"@en .
+
+
+###  https://w3id.org/wdio#Flyholeform
+:Flyholeform rdf:type owl:Class ;
+             rdfs:subClassOf :Insectclasses ;
+             rdfs:comment "Discribes the form of the flyholes."@en ;
+             rdfs:label "flyholeform"@en .
+
+
+###  https://w3id.org/wdio#Freshwood_insects
+:Freshwood_insects rdf:type owl:Class ;
+                   rdfs:subClassOf :Insectclasses ;
+                   rdfs:comment "Occur on live tree or freshly felled trunks."@en ;
+                   rdfs:label "Freshwood insects"@en .
+
+
+###  https://w3id.org/wdio#Fringed_outlet_holes
+:Fringed_outlet_holes rdf:type owl:Class ;
+                      rdfs:subClassOf :Fly_holes ;
+                      rdfs:comment "The outlet of the fly hole is fringed."@en ;
+                      rdfs:label "fringed"@en .
+
+
+###  https://w3id.org/wdio#GK0
+:GK0 rdf:type owl:Class ;
+     rdfs:subClassOf :Hazard_class_according_to_DIN_68800-1 ;
+     rdfs:comment "Wood or wood product under roof, not exposed to weathering and no humidification, the risk of structural damage by insects can be excluded."@en ;
+     rdfs:label "DC0"@en .
+
+
+###  https://w3id.org/wdio#GK1
+:GK1 rdf:type owl:Class ;
+     rdfs:subClassOf :Hazard_class_according_to_DIN_68800-1 ;
+     rdfs:comment "Wood or wood product under roof, not exposed to weathering and not humidified."@en ;
+     rdfs:label "DC1"@en .
+
+
+###  https://w3id.org/wdio#GK2
+:GK2 rdf:type owl:Class ;
+     rdfs:subClassOf :Hazard_class_according_to_DIN_68800-1 ;
+     rdfs:comment "Wood or wood product under roof, not exposed to weathering, high ambient humidity can lead to le-gual but not permanent moistening."@en ;
+     rdfs:label "DC2"@en .
+
+
+###  https://w3id.org/wdio#GK3a
+:GK3a rdf:type owl:Class ;
+      rdfs:subClassOf :Hazard_class_according_to_DIN_68800-1 ;
+      rdfs:comment "Wood or wood product not under roof, with weathering, but without constant contact with soil or water, accumulation of water in the wood, even spatially limited, is not to be expected due to rapid re-drying."@en ;
+      rdfs:label "DC3a"@en .
+
+
+###  https://w3id.org/wdio#GK3b
+:GK3b rdf:type owl:Class ;
+      rdfs:subClassOf :Hazard_class_according_to_DIN_68800-1 ;
+      rdfs:comment "Wood or wood product not under roof, with weathering, but without constant contact with soil or water, accumulation of water in the wood, also spatially limited, to be expected."@en ;
+      rdfs:label "DC3b"@en .
+
+
+###  https://w3id.org/wdio#GK4
+:GK4 rdf:type owl:Class ;
+     rdfs:subClassOf :Hazard_class_according_to_DIN_68800-1 ;
+     rdfs:comment "Wood or wood product in contact with soil or fresh water and thus mainly to permanently exposed to moisture during moderate to heavy use."@en ;
+     rdfs:label "DC4"@en .
+
+
+###  https://w3id.org/wdio#GK5
+:GK5 rdf:type owl:Class ;
+     rdfs:subClassOf :Hazard_class_according_to_DIN_68800-1 ;
+     rdfs:comment "Wood or wood product, constantly exposed to seawater."@en ;
+     rdfs:label "DC5"@en .
+
+
+###  https://w3id.org/wdio#Gas_methods
+:Gas_methods rdf:type owl:Class ;
+             rdfs:subClassOf :Treatment ;
+             rdfs:comment "The fumigation process is based on the application of toxic gases, while the control with modified atmospheres is based on the application of asphyxiating gases."@en ;
+             rdfs:label "Gas method"@en .
+
+
+###  https://w3id.org/wdio#Hardwood
+:Hardwood rdf:type owl:Class ;
+          rdfs:subClassOf :Wood ;
+          rdfs:comment "Laubholz (deutsch)" ;
+          rdfs:label "Hardwood"@en ;
+          rdfs:seeAlso "https://www.wikidata.org/wiki/Q2266509" .
+
+
+###  https://w3id.org/wdio#Hardwood_Heartwood
+:Hardwood_Heartwood rdf:type owl:Class ;
+                    rdfs:subClassOf :Hardwood ;
+                    rdfs:label "Hardwood heartwood"@en .
+
+
+###  https://w3id.org/wdio#Hardwood_Sapwood
+:Hardwood_Sapwood rdf:type owl:Class ;
+                  rdfs:subClassOf :Hardwood ;
+                  rdfs:label "Hardwood sapwood"@en .
+
+
+###  https://w3id.org/wdio#Hazard_class_according_to_DIN_68800-1
+:Hazard_class_according_to_DIN_68800-1 rdf:type owl:Class ;
+                                       rdfs:subClassOf owl:Thing ;
+                                       rdfs:comment "Danger classes (DC) - description of general conditions of use as well as possible hazards/stresses and moisture content of the installed wood. (According to the DIN 68800-1)"@en ;
+                                       rdfs:label "Danger classes" .
+
+
+###  https://w3id.org/wdio#Hot_Air
+:Hot_Air rdf:type owl:Class ;
+         rdfs:subClassOf :Treatment ;
+         rdfs:comment """The hot-air method as a standard sanitation method for combating wood-destroying insects belongs to the thermal methods.
+The hot air process does not protect the treated wood from new infestation."""@en ;
+         rdfs:label "Hot air method"@en .
+
+
+###  https://w3id.org/wdio#Injektion
+:Injektion rdf:type owl:Class ;
+           rdfs:subClassOf :Treatment ;
+           rdfs:comment "Treatment of the wooden structure with borehole impregnation or borehole pressure impregnation with wood injectors"@en ;
+           rdfs:label "Injection"@en .
+
+
+###  https://w3id.org/wdio#Insectclasses
+:Insectclasses rdf:type owl:Class ;
+               rdfs:subClassOf :Insects ;
+               rdfs:comment "Describes superordinate classes that describe characteristics, behavior, and distribution of insects."@en ;
+               rdfs:label "Insectclasses"@en .
+
+
+###  https://w3id.org/wdio#Insects
+:Insects rdf:type owl:Class ;
+         rdfs:subClassOf owl:Thing ;
+         rdfs:label "Insects characteristics"@en ;
+         owl:incompatibleWith "List of all important wood destroying insects."@en .
+
+
+###  https://w3id.org/wdio#Larch_Heartwood
+:Larch_Heartwood rdf:type owl:Class ;
+                 rdfs:subClassOf :Softwood_Heartwood ;
+                 rdfs:comment "Lärche_Kernholz (deutsch)" ;
+                 rdfs:label "Larch_Heartwood"@en ;
+                 rdfs:seeAlso "https://www.wikidata.org/wiki/Q1879281" .
+
+
+###  https://w3id.org/wdio#Larch_Sapwood
+:Larch_Sapwood rdf:type owl:Class ;
+               rdfs:subClassOf :Softwood_Sapwood ;
+               rdfs:comment "Lärche_Splintholz (deutsch)" ;
+               rdfs:label "Larch_Sapwood"@en ;
+               rdfs:seeAlso "https://www.wikidata.org/wiki/Q1879281" .
+
+
+###  https://w3id.org/wdio#Longhorn_beetle
+:Longhorn_beetle rdf:type owl:Class ;
+                 rdfs:subClassOf :Insectclasses ;
+                 rdfs:comment "Horn-like arranged antennae. Larvae cylindrical flattened. Larval color white, yellowish, ivory. Thickened cull thighs."^^rdfs:Literal ;
+                 rdfs:label "Longhorn beetle"@en .
+
+
+###  https://w3id.org/wdio#Make_hearable_nagging_noise
+:Make_hearable_nagging_noise rdf:type owl:Class ;
+                             rdfs:subClassOf :Insectclasses ;
+                             rdfs:comment "Is is possible to hear nagging noises fom the insects."@en ;
+                             rdfs:label "Making hearable noise"@en .
+
+
+###  https://w3id.org/wdio#Oak_Heartwood
+:Oak_Heartwood rdf:type owl:Class ;
+               rdfs:subClassOf :Hardwood_Heartwood ;
+               rdfs:comment "Eiche_Kernholz (deutsch)" ;
+               rdfs:label "Oak_Heartwood"@en ;
+               rdfs:seeAlso "https://www.wikidata.org/wiki/Q2075708" .
+
+
+###  https://w3id.org/wdio#Oak_Sapwood
+:Oak_Sapwood rdf:type owl:Class ;
+             rdfs:subClassOf :Hardwood_Sapwood ;
+             rdfs:comment "Eiche_Splintholz (deutsch)" ;
+             rdfs:label "Oak_Sapwood"@en ;
+             rdfs:seeAlso "https://www.wikidata.org/wiki/Q2075708" .
+
+
+###  https://w3id.org/wdio#Pine_Heartwood
+:Pine_Heartwood rdf:type owl:Class ;
+                rdfs:subClassOf :Softwood_Heartwood ;
+                rdfs:comment "Kiefer_Kernholz (deutsch)" ;
+                rdfs:label "Pine_Heartwood"@en ;
+                rdfs:seeAlso "https://www.wikidata.org/wiki/Q1503211" .
+
+
+###  https://w3id.org/wdio#Pine_Sapwood
+:Pine_Sapwood rdf:type owl:Class ;
+              rdfs:subClassOf :Softwood_Sapwood ;
+              rdfs:comment "Kiefer_Splintholz (deutsch)" ;
+              rdfs:label "Pine_Sapwood"@en ;
+              rdfs:seeAlso "https://www.wikidata.org/wiki/Q1503211" .
+
+
+###  https://w3id.org/wdio#Redbeech_Heartwood
+:Redbeech_Heartwood rdf:type owl:Class ;
+                    rdfs:subClassOf :Hardwood_Heartwood ;
+                    rdfs:comment "Rotbuche_Kernholz (deutsch)" ;
+                    rdfs:label "Redbeech_Heartwood"@en ;
+                    rdfs:seeAlso "https://www.wikidata.org/wiki/Q146149" .
+
+
+###  https://w3id.org/wdio#Redbeech_Sapwood
+:Redbeech_Sapwood rdf:type owl:Class ;
+                  rdfs:subClassOf :Hardwood_Sapwood ;
+                  rdfs:comment "Rotbuche_Splintholz (deutsch)" ;
+                  rdfs:label "Redbeech_Sapwood"@en ;
+                  rdfs:seeAlso "https://www.wikidata.org/wiki/Q146149" .
+
+
+###  https://w3id.org/wdio#Report_is_required
+:Report_is_required rdf:type owl:Class ;
+                    rdfs:subClassOf :Damage_characteristics ;
+                    rdfs:comment "The classification of this insect is to report to the local authorities."@en ;
+                    rdfs:label "reportable_insect"@en .
+
+
+###  https://w3id.org/wdio#Roll-shaped
+:Roll-shaped rdf:type owl:Class ;
+             rdfs:subClassOf :feces ;
+             rdfs:comment "Feces pills are lenticular."@en ;
+             rdfs:label "roll-shaped"@en .
+
+
+###  https://w3id.org/wdio#Rottenwood_Insects
+:Rottenwood_Insects rdf:type owl:Class ;
+                    rdfs:subClassOf :Insectclasses ;
+                    rdfs:comment "Primarily found in wood pre-damaged by fungi. Suspect hidden fungal damage when found."^^rdfs:Literal ;
+                    rdfs:label "Rottenwood insect"@en .
+
+
+###  https://w3id.org/wdio#Sapwood_beetle
+:Sapwood_beetle rdf:type owl:Class ;
+                rdfs:subClassOf :Insectclasses ;
+                rdfs:comment "This insects are only affecting sapwood of hardwood."@en ;
+                rdfs:label "Sapwood beetle"@en .
+
+
+###  https://w3id.org/wdio#Smooth_outlet_holes
+:Smooth_outlet_holes rdf:type owl:Class ;
+                     rdfs:subClassOf :Fly_holes ;
+                     rdfs:comment "The outlet of the fly hole is smooth."@en ;
+                     rdfs:label "smooth"@en .
+
+
+###  https://w3id.org/wdio#Softwood
+:Softwood rdf:type owl:Class ;
+          rdfs:subClassOf :Wood ;
+          rdfs:comment "Nadelholz (deutsch)" ;
+          rdfs:label "Softwood"@en ;
+          rdfs:seeAlso "https://www.wikidata.org/wiki/Q252108" .
+
+
+###  https://w3id.org/wdio#Softwood_Heartwood
+:Softwood_Heartwood rdf:type owl:Class ;
+                    rdfs:subClassOf :Softwood ;
+                    rdfs:label "Softwood heartwood"@en .
+
+
+###  https://w3id.org/wdio#Softwood_Sapwood
+:Softwood_Sapwood rdf:type owl:Class ;
+                  rdfs:subClassOf :Softwood ;
+                  rdfs:label "Softwood sapwood"@en .
+
+
+###  https://w3id.org/wdio#Special_Features
+:Special_Features rdf:type owl:Class ;
+                  rdfs:subClassOf :Damage_characteristics ;
+                  rdfs:comment "Describes a unique feature of an insect."@en ;
+                  rdfs:label "Special features"@en .
+
+
+###  https://w3id.org/wdio#Spruce_Heartwood
+:Spruce_Heartwood rdf:type owl:Class ;
+                  rdfs:subClassOf :Softwood_Heartwood ;
+                  rdfs:comment "Fichte_Kernholz (deutsch)" ;
+                  rdfs:label "Spruce_Heartwood"@en ;
+                  rdfs:seeAlso "https://www.wikidata.org/wiki/Q26782" .
+
+
+###  https://w3id.org/wdio#Spruce_Sapwood
+:Spruce_Sapwood rdf:type owl:Class ;
+                rdfs:subClassOf :Softwood_Sapwood ;
+                rdfs:comment "Fichte_Splintholz (deutsch)" ;
+                rdfs:label "Spruce_Sapwood"@en ;
+                rdfs:seeAlso "https://www.wikidata.org/wiki/Q26782" .
+
+
+###  https://w3id.org/wdio#Treatment
+:Treatment rdf:type owl:Class ;
+           rdfs:subClassOf :load_bearing_structure_relevant ;
+           rdfs:comment "Treatment_according_to_DIN_68800-4"@en ;
+           rdfs:label "Treatment"@en .
+
+
+###  https://w3id.org/wdio#Wood
+:Wood rdf:type owl:Class ;
+      rdfs:subClassOf owl:Thing ;
+      rdfs:comment "Fibrous material from trees or other plants."@en ;
+      rdfs:label "Wood" ;
+      rdfs:seeAlso "https://www.wikidata.org/wiki/Q287" .
+
+
+###  https://w3id.org/wdio#acyclic_action
+:acyclic_action rdf:type owl:Class ;
+                rdfs:subClassOf :insect_cycle ;
+                rdfs:comment "Insects of this class are usually affecting the wood for one period. After hatching, the insects fly out and leave the structure."@en ;
+                rdfs:label "Acyclic"@en .
+
+
+###  https://w3id.org/wdio#black
+:black rdf:type owl:Class ;
+       rdfs:subClassOf :Colors ;
+       rdfs:comment "Color type."@en ;
+       rdfs:label "Black"@en ;
+       rdfs:seeAlso "https://www.wikidata.org/wiki/Q23445" .
+
+
+###  https://w3id.org/wdio#blue
+:blue rdf:type owl:Class ;
+      rdfs:subClassOf :Colors ;
+      rdfs:comment "Color type."@en ;
+      rdfs:label "Blue"@en ;
+      rdfs:seeAlso "https://www.wikidata.org/wiki/Q1088" .
+
+
+###  https://w3id.org/wdio#bronze
+:bronze rdf:type owl:Class ;
+        rdfs:subClassOf :Colors ;
+        rdfs:comment "Color type."@en ;
+        rdfs:label "Bronze"@en ;
+        rdfs:seeAlso "https://www.wikidata.org/wiki/Q2778382" .
+
+
+###  https://w3id.org/wdio#brown
+:brown rdf:type owl:Class ;
+       rdfs:subClassOf :Colors ;
+       rdfs:comment "Color type."@en ;
+       rdfs:label "Brown"@en ;
+       rdfs:seeAlso "https://www.wikidata.org/wiki/Q47071" .
+
+
+###  https://w3id.org/wdio#cyclic_action
+:cyclic_action rdf:type owl:Class ;
+               rdfs:subClassOf :insect_cycle ;
+               rdfs:comment "Insects of this class are usually affecting the wood for more than one period. After hatching, the insects direcly mate and lay eggs in the same structure."@en ;
+               rdfs:label "Cyclic"@en .
+
+
+###  https://w3id.org/wdio#feces
+:feces rdf:type owl:Class ;
+       rdfs:subClassOf :Damage_characteristics ;
+       rdfs:comment "Describes the residues from insect feeding activities."@en ;
+       rdfs:label "Feces"@en .
+
+
+###  https://w3id.org/wdio#fine_and_dusty
+:fine_and_dusty rdf:type owl:Class ;
+                rdfs:subClassOf :feces ;
+                rdfs:comment "Fine wood flour. The fecal pills have partially long drawn ends."@en ;
+                rdfs:label "fine and dusty"@en .
+
+
+###  https://w3id.org/wdio#frequency
+:frequency rdf:type owl:Class ;
+           rdfs:subClassOf :Insectclasses ;
+           rdfs:comment "Describes the freqeucy of the insect."@en ;
+           rdfs:label "Frequency"@en .
+
+
+###  https://w3id.org/wdio#insect_cycle
+:insect_cycle rdf:type owl:Class ;
+              rdfs:subClassOf :Insectclasses ;
+              rdfs:comment "Discribes the cycle behavior of the insect."@en ;
+              rdfs:label "Insect cycle"@en .
+
+
+###  https://w3id.org/wdio#ivory
+:ivory rdf:type owl:Class ;
+       rdfs:subClassOf :Colors ;
+       rdfs:comment "Color type."@en ;
+       rdfs:label "Ivory"@en ;
+       rdfs:seeAlso "https://www.wikidata.org/wiki/Q1358981" .
+
+
+###  https://w3id.org/wdio#light_yellow
+:light_yellow rdf:type owl:Class ;
+              rdfs:subClassOf :Colors ;
+              rdfs:comment "Color type."@en ;
+              rdfs:label "Light Yellow"@en ;
+              rdfs:seeAlso "https://www.wikidata.org/wiki/Q68223248" .
+
+
+###  https://w3id.org/wdio#load_bearing_structure_irrelevant
+:load_bearing_structure_irrelevant rdf:type owl:Class ;
+                                   rdfs:subClassOf :Damage_characteristics ;
+                                   owl:disjointWith :load_bearing_structure_relevant ;
+                                   rdfs:comment "The damage is not relevant for load bearing structure."@en ;
+                                   rdfs:label "bearing_irrelevant"@en .
+
+
+###  https://w3id.org/wdio#load_bearing_structure_relevant
+:load_bearing_structure_relevant rdf:type owl:Class ;
+                                 rdfs:subClassOf :Damage_characteristics ;
+                                 rdfs:comment "The damage is relevant for load bearing structure."@en ;
+                                 rdfs:label "bearing_relevant"@en .
+
+
+###  https://w3id.org/wdio#often
+:often rdf:type owl:Class ;
+       rdfs:subClassOf :frequency ;
+       rdfs:comment "Insects of this class are often found as wooddestroyer."@en ;
+       rdfs:label "Often found"@en .
+
+
+###  https://w3id.org/wdio#oval
+:oval rdf:type owl:Class ;
+      rdfs:subClassOf :Flyholeform ;
+      rdfs:comment "The flyhole is oval."@en ;
+      rdfs:label "oval"@en .
+
+
+###  https://w3id.org/wdio#red
+:red rdf:type owl:Class ;
+     rdfs:subClassOf :Colors ;
+     rdfs:comment "Color type."@en ;
+     rdfs:label "Red"@en ;
+     rdfs:seeAlso "https://www.wikidata.org/wiki/Q3142" .
+
+
+###  https://w3id.org/wdio#round
+:round rdf:type owl:Class ;
+       rdfs:subClassOf :Flyholeform ;
+       rdfs:comment "The flyhole is round."@en ;
+       rdfs:label "round"@en .
+
+
+###  https://w3id.org/wdio#seldom
+:seldom rdf:type owl:Class ;
+        rdfs:subClassOf :frequency ;
+        rdfs:comment "Insects of this class are seldom found as wooddestroyer."@en ;
+        rdfs:label "Seldom found"@en .
+
+
+###  https://w3id.org/wdio#unknown_insect
+:unknown_insect rdf:type owl:Class ;
+                owl:equivalentClass [ owl:intersectionOf ( :GK2
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :is_affecting ;
+                                                             owl:someValuesFrom :GK1
+                                                           ]
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ,
+                                    [ owl:intersectionOf ( :round
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :has_flyholeform ;
+                                                             owl:someValuesFrom :oval
+                                                           ]
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ,
+                                    [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :is_affecting ;
+                                                             owl:someValuesFrom :Fir_Sapwood
+                                                           ]
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :is_affecting ;
+                                                             owl:someValuesFrom :Pine_Sapwood
+                                                           ]
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :is_affecting ;
+                                                             owl:someValuesFrom :Spruce_Sapwood
+                                                           ]
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ,
+                                    [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :has_fly_hole_size ;
+                                                             owl:hasValue 5
+                                                           ]
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :has_fly_hole_size ;
+                                                             owl:hasValue 6
+                                                           ]
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :has_fly_hole_size ;
+                                                             owl:hasValue 7
+                                                           ]
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ;
+                rdfs:subClassOf owl:Thing ;
+                rdfs:comment "In this class you can describe your finding about the damage. Plaese write the finings in the class \"Equivalent To\" and the start the reasoner!"@en ;
+                rdfs:label "Reasoning your damage"@en .
+
+
+###  https://w3id.org/wdio#white
+:white rdf:type owl:Class ;
+       rdfs:subClassOf :Colors ;
+       rdfs:comment "Color type."@en ;
+       rdfs:label "White"@en ;
+       rdfs:seeAlso "https://www.wikidata.org/wiki/Q23444" .
+
+
+###  https://w3id.org/wdio#woodboring_beetle
+:woodboring_beetle rdf:type owl:Class ;
+                   rdfs:subClassOf :Insectclasses ;
+                   rdfs:comment "All anobia are small beetles with brownish color with a typical neck shield that covers the neck like a hood.  The exit holes are circular with a diameter of 1.5 - 3.5mm. The larvae are white and have three pairs of legs. Depending on the species, the beetles live in dry hardwood and/or hardwood as well as moist fungus-infested wood."@en ;
+                   rdfs:label "Woodboring beetle"@en .
+
+
+###  https://w3id.org/wdio#yellow
+:yellow rdf:type owl:Class ;
+        rdfs:subClassOf :Colors ;
+        rdfs:comment "Color type."@en ;
+        rdfs:label "Yellow"@en ;
+        rdfs:seeAlso "https://www.wikidata.org/wiki/Q943" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/wdio#Blauer_Scheibenbock
+:Blauer_Scheibenbock rdf:type owl:NamedIndividual ,
+                              :Douglas_fir_Sapwood ,
+                              :Fir_Sapwood ,
+                              :Freshwood_insects ,
+                              :GK4 ,
+                              :GK5 ,
+                              :Insectclasses ,
+                              :Insects ,
+                              :Larch_Sapwood ,
+                              :Longhorn_beetle ,
+                              :Pine_Sapwood ,
+                              :Smooth_outlet_holes ,
+                              :Spruce_Sapwood ,
+                              :acyclic_action ,
+                              :load_bearing_structure_irrelevant ,
+                              :often ,
+                              :oval ,
+                              [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                       owl:onProperty :has_fly_hole_size ;
+                                                       owl:hasValue 4
+                                                     ]
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty :has_fly_hole_size ;
+                                                       owl:hasValue 5
+                                                     ]
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty :has_fly_hole_size ;
+                                                       owl:hasValue 6
+                                                     ]
+                                                   ) ;
+                                rdf:type owl:Class
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :has_bodycolor ;
+                                owl:someValuesFrom :blue
+                              ] ;
+                     rdfs:label "Blauer Scheibenbock"@de ,
+                                "Callidium violaceum"^^rdfs:Literal ;
+                     rdfs:seeAlso "https://www.wikidata.org/wiki/Q748359"^^rdfs:Literal .
+
+
+###  https://w3id.org/wdio#Grubenhalsbock
+:Grubenhalsbock rdf:type owl:NamedIndividual ,
+                         :Douglas_fir_Heartwood ,
+                         :Douglas_fir_Sapwood ,
+                         :Fir_Heartwood ,
+                         :Fir_Sapwood ,
+                         :Freshwood_insects ,
+                         :Fringed_outlet_holes ,
+                         :GK4 ,
+                         :GK5 ,
+                         :Insects ,
+                         :Larch_Heartwood ,
+                         :Larch_Sapwood ,
+                         :Longhorn_beetle ,
+                         :Pine_Heartwood ,
+                         :Pine_Sapwood ,
+                         :Smooth_outlet_holes ,
+                         :Spruce_Heartwood ,
+                         :Spruce_Sapwood ,
+                         :acyclic_action ,
+                         :load_bearing_structure_irrelevant ,
+                         :oval ,
+                         :seldom ,
+                         [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :has_fly_hole_size ;
+                                                  owl:hasValue 10
+                                                ]
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :has_fly_hole_size ;
+                                                  owl:hasValue 11
+                                                ]
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :has_fly_hole_size ;
+                                                  owl:hasValue 12
+                                                ]
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :has_fly_hole_size ;
+                                                  owl:hasValue 6
+                                                ]
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :has_fly_hole_size ;
+                                                  owl:hasValue 7
+                                                ]
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :has_fly_hole_size ;
+                                                  owl:hasValue 8
+                                                ]
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :has_fly_hole_size ;
+                                                  owl:hasValue 9
+                                                ]
+                                              ) ;
+                           rdf:type owl:Class
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :has_bodycolor ;
+                           owl:someValuesFrom :brown
+                         ] ;
+                rdfs:label "Grubenhalsbock"@de ,
+                           "Criocephalus rusticus"^^rdfs:Literal ;
+                rdfs:seeAlso "https://www.wikidata.org/wiki/Q1265892"^^rdfs:Literal .
+
+
+###  https://w3id.org/wdio#Hausbock
+:Hausbock rdf:type owl:NamedIndividual ,
+                   :Cylinder_form ,
+                   :Drywood_insects ,
+                   :Fir_Sapwood ,
+                   :Fringed_outlet_holes ,
+                   :GK1 ,
+                   :GK2 ,
+                   :GK3a ,
+                   :GK3b ,
+                   :GK4 ,
+                   :GK5 ,
+                   :Insectclasses ,
+                   :Insects ,
+                   :Larch_Sapwood ,
+                   :Longhorn_beetle ,
+                   :Make_hearable_nagging_noise ,
+                   :Pine_Sapwood ,
+                   :Report_is_required ,
+                   :Smooth_outlet_holes ,
+                   :cyclic_action ,
+                   :fine_and_dusty ,
+                   :load_bearing_structure_irrelevant ,
+                   :often ,
+                   :oval ,
+                   [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                            owl:onProperty :has_fly_hole_size ;
+                                            owl:hasValue 4
+                                          ]
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty :has_fly_hole_size ;
+                                            owl:hasValue 5
+                                          ]
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty :has_fly_hole_size ;
+                                            owl:hasValue 6
+                                          ]
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty :has_fly_hole_size ;
+                                            owl:hasValue 7
+                                          ]
+                                        ) ;
+                     rdf:type owl:Class
+                   ] ,
+                   [ rdf:type owl:Restriction ;
+                     owl:onProperty :has_bodycolor ;
+                     owl:someValuesFrom :black
+                   ] ,
+                   [ rdf:type owl:Restriction ;
+                     owl:onProperty :has_bodycolor ;
+                     owl:someValuesFrom :brown
+                   ] ;
+          rdfs:label "Hausbock"@de ,
+                     "hylotrupes bajulus"^^rdfs:Literal ;
+          rdfs:seeAlso "https://www.wikidata.org/wiki/Q21121"^^rdfs:Literal .
+
+
+###  https://w3id.org/wdio#Holzwespen
+:Holzwespen rdf:type owl:NamedIndividual ,
+                     :Cylinder_form ,
+                     :Douglas_fir_Sapwood ,
+                     :Fir_Sapwood ,
+                     :Freshwood_insects ,
+                     :GK4 ,
+                     :GK5 ,
+                     :Insectclasses ,
+                     :Insects ,
+                     :Larch_Sapwood ,
+                     :Pine_Sapwood ,
+                     :Smooth_outlet_holes ,
+                     :Spruce_Sapwood ,
+                     :acyclic_action ,
+                     :load_bearing_structure_irrelevant ,
+                     :often ,
+                     :round ,
+                     [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                              owl:onProperty :has_fly_hole_size ;
+                                              owl:hasValue 2
+                                            ]
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty :has_fly_hole_size ;
+                                              owl:hasValue 3
+                                            ]
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty :has_fly_hole_size ;
+                                              owl:hasValue 4
+                                            ]
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty :has_fly_hole_size ;
+                                              owl:hasValue 5
+                                            ]
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty :has_fly_hole_size ;
+                                              owl:hasValue 6
+                                            ]
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty :has_fly_hole_size ;
+                                              owl:hasValue 7
+                                            ]
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty :has_fly_hole_size ;
+                                              owl:hasValue 8
+                                            ]
+                                          ) ;
+                       rdf:type owl:Class
+                     ] ,
+                     [ rdf:type owl:Restriction ;
+                       owl:onProperty :has_bodycolor ;
+                       owl:someValuesFrom :black
+                     ] ,
+                     [ rdf:type owl:Restriction ;
+                       owl:onProperty :has_bodycolor ;
+                       owl:someValuesFrom :yellow
+                     ] ;
+            rdfs:label "Holzwespen"@de ,
+                       "urocerus gigas"^^rdfs:Literal ;
+            rdfs:seeAlso "https://www.wikidata.org/wiki/Q967809"^^rdfs:Literal .
+
+
+###  https://w3id.org/wdio#Kapuzinerkäfer
+:Kapuzinerkäfer rdf:type owl:NamedIndividual ,
+                         :Drywood_insects ,
+                         :GK1 ,
+                         :GK2 ,
+                         :GK3a ,
+                         :GK3b ,
+                         :GK4 ,
+                         :GK5 ,
+                         :Insects ,
+                         :Oak_Heartwood ,
+                         :Oak_Sapwood ,
+                         :Smooth_outlet_holes ,
+                         :acyclic_action ,
+                         :load_bearing_structure_irrelevant ,
+                         :round ,
+                         :seldom ,
+                         [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :has_fly_hole_size ;
+                                                  owl:hasValue 3
+                                                ]
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :has_fly_hole_size ;
+                                                  owl:hasValue 4
+                                                ]
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :has_fly_hole_size ;
+                                                  owl:hasValue 5
+                                                ]
+                                              ) ;
+                           rdf:type owl:Class
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :has_bodycolor ;
+                           owl:someValuesFrom :black
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :has_bodycolor ;
+                           owl:someValuesFrom :brown
+                         ] ;
+                rdfs:label "Kapuzinerkäfer"@de ,
+                           "bostrychus capucinus"^^rdfs:Literal ;
+                rdfs:seeAlso "https://www.wikidata.org/wiki/Q1734080"^^rdfs:Literal .
+
+
+###  https://w3id.org/wdio#Rothalsbock
+:Rothalsbock rdf:type owl:NamedIndividual ,
+                      :Douglas_fir_Sapwood ,
+                      :Fir_Sapwood ,
+                      :Freshwood_insects ,
+                      :Fringed_outlet_holes ,
+                      :GK4 ,
+                      :GK5 ,
+                      :Insects ,
+                      :Larch_Sapwood ,
+                      :Longhorn_beetle ,
+                      :Pine_Sapwood ,
+                      :Smooth_outlet_holes ,
+                      :Spruce_Sapwood ,
+                      :acyclic_action ,
+                      :load_bearing_structure_irrelevant ,
+                      :round ,
+                      :seldom ,
+                      [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                               owl:onProperty :has_fly_hole_size ;
+                                               owl:hasValue 4
+                                             ]
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty :has_fly_hole_size ;
+                                               owl:hasValue 5
+                                             ]
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty :has_fly_hole_size ;
+                                               owl:hasValue 6
+                                             ]
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty :has_fly_hole_size ;
+                                               owl:hasValue 7
+                                             ]
+                                           ) ;
+                        rdf:type owl:Class
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :has_bodycolor ;
+                        owl:someValuesFrom :brown
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :has_bodycolor ;
+                        owl:someValuesFrom :red
+                      ] ;
+             rdfs:label "Rothalsbock"@de ,
+                        "Leptura rubra"^^rdfs:Literal ;
+             rdfs:seeAlso "https://www.wikidata.org/wiki/Q1928502"^^rdfs:Literal .
+
+
+###  https://w3id.org/wdio#Schusterbock
+:Schusterbock rdf:type owl:NamedIndividual ,
+                       :Douglas_fir_Sapwood ,
+                       :Fir_Sapwood ,
+                       :Freshwood_insects ,
+                       :Fringed_outlet_holes ,
+                       :GK4 ,
+                       :GK5 ,
+                       :Insects ,
+                       :Larch_Sapwood ,
+                       :Longhorn_beetle ,
+                       :Pine_Sapwood ,
+                       :Smooth_outlet_holes ,
+                       :Spruce_Sapwood ,
+                       :acyclic_action ,
+                       :load_bearing_structure_irrelevant ,
+                       :round ,
+                       :seldom ,
+                       [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                owl:onProperty :has_fly_hole_size ;
+                                                owl:hasValue 10
+                                              ]
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty :has_fly_hole_size ;
+                                                owl:hasValue 4
+                                              ]
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty :has_fly_hole_size ;
+                                                owl:hasValue 5
+                                              ]
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty :has_fly_hole_size ;
+                                                owl:hasValue 6
+                                              ]
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty :has_fly_hole_size ;
+                                                owl:hasValue 7
+                                              ]
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty :has_fly_hole_size ;
+                                                owl:hasValue 8
+                                              ]
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty :has_fly_hole_size ;
+                                                owl:hasValue 9
+                                              ]
+                                            ) ;
+                         rdf:type owl:Class
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :has_bodycolor ;
+                         owl:someValuesFrom :black
+                       ] ;
+              rdfs:label "Schusterbock"@de ,
+                         "monochamus sartor"^^rdfs:Literal ;
+              rdfs:seeAlso "https://www.wikidata.org/wiki/Q1093724"^^rdfs:Literal .
+
+
+###  https://w3id.org/wdio#Schwammholz-Nagekäfer
+:Schwammholz-Nagekäfer rdf:type owl:NamedIndividual ,
+                                :Douglas_fir_Heartwood ,
+                                :Douglas_fir_Sapwood ,
+                                :Fir_Heartwood ,
+                                :Fir_Sapwood ,
+                                :GK4 ,
+                                :GK5 ,
+                                :Insects ,
+                                :Larch_Heartwood ,
+                                :Larch_Sapwood ,
+                                :Pine_Heartwood ,
+                                :Pine_Sapwood ,
+                                :Rottenwood_Insects ,
+                                :Spruce_Sapwood ,
+                                :acyclic_action ,
+                                :fine_and_dusty ,
+                                :load_bearing_structure_irrelevant ,
+                                :round ,
+                                :seldom ,
+                                [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                         owl:onProperty :has_fly_hole_size ;
+                                                         owl:hasValue 1
+                                                       ]
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty :has_fly_hole_size ;
+                                                         owl:hasValue 2
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :has_bodycolor ;
+                                  owl:someValuesFrom :brown
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :has_bodycolor ;
+                                  owl:someValuesFrom :red
+                                ] ;
+                       rdfs:label "Schwammholz-Nagekäfer"@de ,
+                                  "priobium carpini"^^rdfs:Literal ;
+                       rdfs:seeAlso "https://www.wikidata.org/wiki/Q2916527"^^rdfs:Literal .
+
+
+###  https://w3id.org/wdio#Trotzkopf
+:Trotzkopf rdf:type owl:NamedIndividual ,
+                    :Douglas_fir_Heartwood ,
+                    :Douglas_fir_Sapwood ,
+                    :Fir_Heartwood ,
+                    :Fir_Sapwood ,
+                    :GK4 ,
+                    :GK5 ,
+                    :Insectclasses ,
+                    :Insects ,
+                    :Larch_Heartwood ,
+                    :Larch_Sapwood ,
+                    :Pine_Heartwood ,
+                    :Pine_Sapwood ,
+                    :Rottenwood_Insects ,
+                    :Spruce_Heartwood ,
+                    :Spruce_Sapwood ,
+                    :acyclic_action ,
+                    :fine_and_dusty ,
+                    :load_bearing_structure_relevant ,
+                    :often ,
+                    :round ,
+                    [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                             owl:onProperty :has_fly_hole_size ;
+                                             owl:hasValue 2
+                                           ]
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty :has_fly_hole_size ;
+                                             owl:hasValue 3
+                                           ]
+                                         ) ;
+                      rdf:type owl:Class
+                    ] ,
+                    [ rdf:type owl:Restriction ;
+                      owl:onProperty :has_bodycolor ;
+                      owl:someValuesFrom :black
+                    ] ,
+                    [ rdf:type owl:Restriction ;
+                      owl:onProperty :has_bodycolor ;
+                      owl:someValuesFrom :brown
+                    ] ;
+           rdfs:label "Trotzkopf"@de ,
+                      "hadrobregmus pertinax"^^rdfs:Literal ;
+           rdfs:seeAlso "https://www.wikidata.org/wiki/Q1788955"^^rdfs:Literal .
+
+
+###  https://w3id.org/wdio#brauner_Splintholzkäfer
+:brauner_Splintholzkäfer rdf:type owl:NamedIndividual ,
+                                  :Alder_Sapwood ,
+                                  :Ash_Sapwood ,
+                                  :Beech_Sapwood ,
+                                  :Chestnut_Sapwood ,
+                                  :Drywood_insects ,
+                                  :GK0 ,
+                                  :GK1 ,
+                                  :GK2 ,
+                                  :GK3a ,
+                                  :GK3b ,
+                                  :GK4 ,
+                                  :GK5 ,
+                                  :Insectclasses ,
+                                  :Insects ,
+                                  :Oak_Sapwood ,
+                                  :Redbeech_Sapwood ,
+                                  :Sapwood_beetle ,
+                                  :Smooth_outlet_holes ,
+                                  :acyclic_action ,
+                                  :fine_and_dusty ,
+                                  :load_bearing_structure_irrelevant ,
+                                  :often ,
+                                  :round ,
+                                  [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                           owl:onProperty :has_fly_hole_size ;
+                                                           owl:hasValue 1
+                                                         ]
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty :has_fly_hole_size ;
+                                                           owl:hasValue 2
+                                                         ]
+                                                       ) ;
+                                    rdf:type owl:Class
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :has_bodycolor ;
+                                    owl:someValuesFrom :brown
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :has_bodycolor ;
+                                    owl:someValuesFrom :red
+                                  ] ;
+                         rdfs:label "Brauner Splintholzkäfer"@de ,
+                                    "lyctus brunneus"^^rdfs:Literal ;
+                         rdfs:seeAlso "https://www.wikidata.org/wiki/Q639794"^^rdfs:Literal .
+
+
+###  https://w3id.org/wdio#gekämmter_Nagekäfer
+:gekämmter_Nagekäfer rdf:type owl:NamedIndividual ,
+                              :Alder_Heartwood ,
+                              :Alder_Sapwood ,
+                              :Ash_Heartwood ,
+                              :Ash_Sapwood ,
+                              :Beech_Heartwood ,
+                              :Beech_Sapwood ,
+                              :Chestnut_Heartwood ,
+                              :Chestnut_Sapwood ,
+                              :Drywood_insects ,
+                              :GK1 ,
+                              :GK2 ,
+                              :GK3a ,
+                              :GK3b ,
+                              :GK4 ,
+                              :GK5 ,
+                              :Hardwood_Sapwood ,
+                              :Insects ,
+                              :Oak_Heartwood ,
+                              :Oak_Sapwood ,
+                              :Redbeech_Heartwood ,
+                              :Redbeech_Sapwood ,
+                              :Smooth_outlet_holes ,
+                              :acyclic_action ,
+                              :load_bearing_structure_irrelevant ,
+                              :round ,
+                              :seldom ,
+                              :woodboring_beetle ,
+                              [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                       owl:onProperty :has_fly_hole_size ;
+                                                       owl:hasValue 1
+                                                     ]
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty :has_fly_hole_size ;
+                                                       owl:hasValue 2
+                                                     ]
+                                                   ) ;
+                                rdf:type owl:Class
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :has_bodycolor ;
+                                owl:someValuesFrom :black
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :has_bodycolor ;
+                                owl:someValuesFrom :brown
+                              ] ;
+                     rdfs:label "Gekämmter Nagekäfer"@de ,
+                                "ptilinus pectinicornis"^^rdfs:Literal ;
+                     rdfs:seeAlso "https://www.wikidata.org/wiki/Q2314103"^^rdfs:Literal .
+
+
+###  https://w3id.org/wdio#gewöhnlicher_Nagekäfer
+:gewöhnlicher_Nagekäfer rdf:type owl:NamedIndividual ,
+                                 :Alder_Heartwood ,
+                                 :Alder_Sapwood ,
+                                 :Ash_Heartwood ,
+                                 :Ash_Sapwood ,
+                                 :Beech_Heartwood ,
+                                 :Beech_Sapwood ,
+                                 :Chestnut_Heartwood ,
+                                 :Chestnut_Sapwood ,
+                                 :Douglas_fir_Heartwood ,
+                                 :Douglas_fir_Sapwood ,
+                                 :Drywood_insects ,
+                                 :Fir_Heartwood ,
+                                 :Fir_Sapwood ,
+                                 :GK1 ,
+                                 :GK2 ,
+                                 :GK3a ,
+                                 :GK3b ,
+                                 :GK4 ,
+                                 :GK5 ,
+                                 :Insectclasses ,
+                                 :Insects ,
+                                 :Larch_Sapwood ,
+                                 :Oak_Sapwood ,
+                                 :Pine_Heartwood ,
+                                 :Pine_Sapwood ,
+                                 :Redbeech_Heartwood ,
+                                 :Redbeech_Sapwood ,
+                                 :Smooth_outlet_holes ,
+                                 :Spruce_Heartwood ,
+                                 :Spruce_Sapwood ,
+                                 :cyclic_action ,
+                                 :fine_and_dusty ,
+                                 :load_bearing_structure_relevant ,
+                                 :often ,
+                                 :round ,
+                                 :woodboring_beetle ,
+                                 [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                          owl:onProperty :has_fly_hole_size ;
+                                                          owl:hasValue 1
+                                                        ]
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty :has_fly_hole_size ;
+                                                          owl:hasValue 2
+                                                        ]
+                                                      ) ;
+                                   rdf:type owl:Class
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :has_bodycolor ;
+                                   owl:someValuesFrom :black
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :has_bodycolor ;
+                                   owl:someValuesFrom :brown
+                                 ] ;
+                        rdfs:label "Gewöhnlicher Nagekäfer"@de ,
+                                   "anobium punctatum"^^rdfs:Literal ;
+                        rdfs:seeAlso "https://www.wikidata.org/wiki/Q27925"^^rdfs:Literal .
+
+
+###  https://w3id.org/wdio#linierter_Splintholzkäfer
+:linierter_Splintholzkäfer rdf:type owl:NamedIndividual ,
+                                    :Drywood_insects ,
+                                    :GK0 ,
+                                    :GK1 ,
+                                    :GK2 ,
+                                    :GK3a ,
+                                    :GK3b ,
+                                    :GK4 ,
+                                    :GK5 ,
+                                    :Insectclasses ,
+                                    :Insects ,
+                                    :Oak_Heartwood ,
+                                    :Oak_Sapwood ,
+                                    :Sapwood_beetle ,
+                                    :Smooth_outlet_holes ,
+                                    :acyclic_action ,
+                                    :fine_and_dusty ,
+                                    :load_bearing_structure_irrelevant ,
+                                    :often ,
+                                    :round ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :has_bodycolor ;
+                                      owl:someValuesFrom :black
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :has_bodycolor ;
+                                      owl:someValuesFrom :brown
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :has_fly_hole_size ;
+                                      owl:hasValue 1
+                                    ] ;
+                           rdfs:label "Linierter Splintholzkäfer"@de ,
+                                      "lyctus linearis"^^rdfs:Literal ;
+                           rdfs:seeAlso "https://www.wikidata.org/wiki/Q637273"^^rdfs:Literal .
+
+
+###  https://w3id.org/wdio#veränderlicher_Scheibenbock
+:veränderlicher_Scheibenbock rdf:type owl:NamedIndividual ,
+                                      :Beech_Sapwood ,
+                                      :Douglas_fir_Sapwood ,
+                                      :Fir_Sapwood ,
+                                      :Freshwood_insects ,
+                                      :GK4 ,
+                                      :GK5 ,
+                                      :Insectclasses ,
+                                      :Insects ,
+                                      :Larch_Sapwood ,
+                                      :Longhorn_beetle ,
+                                      :Oak_Sapwood ,
+                                      :Pine_Sapwood ,
+                                      :Smooth_outlet_holes ,
+                                      :Spruce_Sapwood ,
+                                      :acyclic_action ,
+                                      :load_bearing_structure_irrelevant ,
+                                      :often ,
+                                      :oval ,
+                                      [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                               owl:onProperty :has_fly_hole_size ;
+                                                               owl:hasValue 3
+                                                             ]
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty :has_fly_hole_size ;
+                                                               owl:hasValue 4
+                                                             ]
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty :has_fly_hole_size ;
+                                                               owl:hasValue 5
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :has_bodycolor ;
+                                        owl:someValuesFrom :black
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :has_bodycolor ;
+                                        owl:someValuesFrom :brown
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :has_bodycolor ;
+                                        owl:someValuesFrom :red
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :has_bodycolor ;
+                                        owl:someValuesFrom :yellow
+                                      ] ;
+                             rdfs:label "Veränderlicher Scheibenbock"@de ,
+                                        "phymatodes testaceus"^^rdfs:Literal ;
+                             rdfs:seeAlso "https://www.wikidata.org/wiki/Q1315415"^^rdfs:Literal .
+
+
+###  https://w3id.org/wdio#weicher_Nagekäfer
+:weicher_Nagekäfer rdf:type owl:NamedIndividual ,
+                            :Drywood_insects ,
+                            :Fir_Sapwood ,
+                            :GK1 ,
+                            :GK2 ,
+                            :GK3a ,
+                            :GK3b ,
+                            :GK4 ,
+                            :GK5 ,
+                            :Insects ,
+                            :Larch_Sapwood ,
+                            :Pine_Sapwood ,
+                            :Smooth_outlet_holes ,
+                            :Spruce_Sapwood ,
+                            :acyclic_action ,
+                            :load_bearing_structure_irrelevant ,
+                            :round ,
+                            :seldom ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :has_bodycolor ;
+                              owl:someValuesFrom :brown
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :has_fly_hole_size ;
+                              owl:hasValue 2
+                            ] ;
+                   rdfs:label "Weicher Nagekäfer"@de ,
+                              "ernobius mollis"^^rdfs:Literal ;
+                   rdfs:seeAlso "https://www.wikidata.org/wiki/Q602516"^^rdfs:Literal .
+
+
+###  https://w3id.org/wdio#%23gescheckter/bunter_Nagekäfer
+<https://w3id.org/wdio#%23gescheckter/bunter_Nagekäfer> rdf:type owl:NamedIndividual ,
+                                                                 :Douglas_fir_Heartwood ,
+                                                                 :Douglas_fir_Sapwood ,
+                                                                 :Fir_Heartwood ,
+                                                                 :Fir_Sapwood ,
+                                                                 :GK4 ,
+                                                                 :GK5 ,
+                                                                 :Insectclasses ,
+                                                                 :Insects ,
+                                                                 :Larch_Heartwood ,
+                                                                 :Larch_Sapwood ,
+                                                                 :Make_hearable_nagging_noise ,
+                                                                 :Oak_Heartwood ,
+                                                                 :Oak_Sapwood ,
+                                                                 :Pine_Heartwood ,
+                                                                 :Pine_Sapwood ,
+                                                                 :Roll-shaped ,
+                                                                 :Rottenwood_Insects ,
+                                                                 :Spruce_Heartwood ,
+                                                                 :Spruce_Sapwood ,
+                                                                 :acyclic_action ,
+                                                                 :fine_and_dusty ,
+                                                                 :load_bearing_structure_irrelevant ,
+                                                                 :often ,
+                                                                 :round ,
+                                                                 :woodboring_beetle ,
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :has_bodycolor ;
+                                                                   owl:someValuesFrom :brown
+                                                                 ] ;
+                                                        rdfs:label "Gescheckter/Bunter Nagekäfer"@de ,
+                                                                   "Xestobium rufovillosum"^^rdfs:Literal ;
+                                                        rdfs:seeAlso "https://www.wikidata.org/wiki/Q1074662"^^rdfs:Literal .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( :Blauer_Scheibenbock
+                        :Grubenhalsbock
+                        :Hausbock
+                        :Holzwespen
+                        :Kapuzinerkäfer
+                        :Rothalsbock
+                        :Schusterbock
+                        :Schwammholz-Nagekäfer
+                        :Trotzkopf
+                        :brauner_Splintholzkäfer
+                        :gekämmter_Nagekäfer
+                        :gewöhnlicher_Nagekäfer
+                        :linierter_Splintholzkäfer
+                        :veränderlicher_Scheibenbock
+                        :weicher_Nagekäfer
+                        <https://w3id.org/wdio#%23gescheckter/bunter_Nagekäfer>
+                      )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( :Holzwespen
+                        :brauner_Splintholzkäfer
+                      )
+] .
+
+
+###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/
